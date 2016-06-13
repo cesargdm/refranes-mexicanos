@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "Aquí va el refrán seleccionado."; ObjectID = "DW0-dJ-cgy"; */
+"DW0-dJ-cgy.text" = "Aquí va el refrán seleccionado.";
+
+/* Class = "UILabel"; text = "Refranes y dichos mexicanos"; ObjectID = "EP0-F6-Qgp"; */
+"EP0-F6-Qgp.text" = "Refranes y dichos mexicanos";
+
+/* Class = "UINavigationItem"; title = "Ajustes"; ObjectID = "EW8-By-H3O"; */
+"EW8-By-H3O.title" = "Ajustes";
+
+/* Class = "UIButton"; normalTitle = "Un excelente refrán va aquí."; ObjectID = "OJU-qd-H5w"; */
+"OJU-qd-H5w.normalTitle" = "Un excelente refrán va aquí.";
+
+/* Class = "UIViewController"; title = "Refranes"; ObjectID = "OTG-JA-peC"; */
+"OTG-JA-peC.title" = "Refranes";
+
+/* Class = "UIBarButtonItem"; title = "Refranes"; ObjectID = "RFE-ZR-I8X"; */
+"RFE-ZR-I8X.title" = "Refranes";
+
+/* Class = "UILabel"; text = "Refrán"; ObjectID = "Rxp-Qp-adV"; */
+"Rxp-Qp-adV.text" = "Refrán";
+
+/* Class = "UIButton"; normalTitle = "Soporte"; ObjectID = "dA0-XP-Spg"; */
+"dA0-XP-Spg.normalTitle" = "Soporte";
+
+/* Class = "UINavigationItem"; title = "Refranes y dichos"; ObjectID = "dAr-Zw-db9"; */
+"dAr-Zw-db9.title" = "Refranes y dichos";
+
+/* Class = "UINavigationItem"; title = "Favoritos"; ObjectID = "eHT-Pg-6DY"; */
+"eHT-Pg-6DY.title" = "Favoritos";
+
+/* Class = "UINavigationController"; title = "Refranes Navigation Controller"; ObjectID = "eZW-9y-LQ4"; */
+"eZW-9y-LQ4.title" = "Refranes Navigation Controller";
+
+/* Class = "UITabBarItem"; title = "Ajustes"; ObjectID = "gWJ-bA-R0B"; */
+"gWJ-bA-R0B.title" = "Ajustes";
+
+/* Class = "UIButton"; normalTitle = "Envía tus refranes y dichos"; ObjectID = "keV-fF-Fez"; */
+"keV-fF-Fez.normalTitle" = "Envía tus refranes y dichos";
+
+/* Class = "UITabBarItem"; title = "Refanes"; ObjectID = "l1H-F8-Ce0"; */
+"l1H-F8-Ce0.title" = "Refanes";
+
+/* Class = "UILabel"; text = "¿Cómo usar?"; ObjectID = "lW5-FM-7Vx"; */
+"lW5-FM-7Vx.text" = "¿Cómo usar?";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "ny6-k0-nrV"; */
+"ny6-k0-nrV.normalTitle" = "Ok";
+
+/* Class = "UILabel"; text = "Aquí van los detalles del refrán seleccionado. Este refrán se refiere a que en ciertas regiones de México..."; ObjectID = "qCv-VT-Lzs"; */
+"qCv-VT-Lzs.text" = "Aquí van los detalles del refrán seleccionado. Este refrán se refiere a que en ciertas regiones de México...";
+
+/* Class = "UIButton"; normalTitle = "Califica el app"; ObjectID = "qLv-x6-thx"; */
+"qLv-x6-thx.normalTitle" = "Califica el app";

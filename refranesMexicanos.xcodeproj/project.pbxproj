@@ -7,16 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77234CFC1B858F6C00823835 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77234CFA1B858F6C00823835 /* Interface.storyboard */; };
+		77234CFE1B858F6C00823835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77234CFD1B858F6C00823835 /* Assets.xcassets */; };
+		77234D051B858F6C00823835 /* refranesMexicanosWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77234D041B858F6C00823835 /* refranesMexicanosWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		77234D0A1B858F6C00823835 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77234D091B858F6C00823835 /* InterfaceController.swift */; };
+		77234D0C1B858F6C00823835 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77234D0B1B858F6C00823835 /* ExtensionDelegate.swift */; };
+		77234D0E1B858F6C00823835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77234D0D1B858F6C00823835 /* Assets.xcassets */; };
+		77234D121B858F6C00823835 /* refranesMexicanosWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 77234CF81B858F6C00823835 /* refranesMexicanosWatch.app */; };
+		77234D1D1B85934200823835 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77234D091B858F6C00823835 /* InterfaceController.swift */; };
+		77234D1F1B8596AF00823835 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77234D1E1B8596AF00823835 /* Images.xcassets */; };
+		77234D211B859BB300823835 /* RefranesBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77234D201B859BB300823835 /* RefranesBook.swift */; };
+		776C527C1B14F899007EA2A7 /* FavoritesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776C527B1B14F899007EA2A7 /* FavoritesListTableViewController.swift */; };
 		77B1598E1B14BB9F009A8EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1598D1B14BB9F009A8EAA /* AppDelegate.swift */; };
-		77B159901B14BB9F009A8EAA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1598F1B14BB9F009A8EAA /* FirstViewController.swift */; };
-		77B159921B14BB9F009A8EAA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B159911B14BB9F009A8EAA /* SecondViewController.swift */; };
+		77B159901B14BB9F009A8EAA /* RefranesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1598F1B14BB9F009A8EAA /* RefranesViewController.swift */; };
 		77B159951B14BB9F009A8EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B159931B14BB9F009A8EAA /* Main.storyboard */; };
 		77B159971B14BB9F009A8EAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77B159961B14BB9F009A8EAA /* Images.xcassets */; };
-		77B1599A1B14BB9F009A8EAA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B159981B14BB9F009A8EAA /* LaunchScreen.xib */; };
 		77B159A61B14BB9F009A8EAA /* refranesMexicanosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B159A51B14BB9F009A8EAA /* refranesMexicanosTests.swift */; };
+		77B159B01B14BE9C009A8EAA /* RefranesBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B159AF1B14BE9C009A8EAA /* RefranesBook.swift */; };
+		77B159B21B14D311009A8EAA /* RefranesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B159B11B14D311009A8EAA /* RefranesDetailViewController.swift */; };
+		77C317111B25220100B74529 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C317101B25220100B74529 /* PresentationViewController.swift */; };
+		77EF5E311B292BF600D51443 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF5E301B292BF600D51443 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		77234D061B858F6C00823835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77B159801B14BB9E009A8EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77234D031B858F6C00823835;
+			remoteInfo = "refranesMexicanosWatch Extension";
+		};
+		77234D101B858F6C00823835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77B159801B14BB9E009A8EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77234CF71B858F6C00823835;
+			remoteInfo = refranesMexicanosWatch;
+		};
 		77B159A01B14BB9F009A8EAA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 77B159801B14BB9E009A8EAA /* Project object */;
@@ -26,21 +53,68 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		77234D181B858F6C00823835 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				77234D051B858F6C00823835 /* refranesMexicanosWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77ED83541B38E1A100305A45 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				77234D121B858F6C00823835 /* refranesMexicanosWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		77234CF81B858F6C00823835 /* refranesMexicanosWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = refranesMexicanosWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77234CFB1B858F6C00823835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		77234CFD1B858F6C00823835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77234CFF1B858F6C00823835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77234D041B858F6C00823835 /* refranesMexicanosWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "refranesMexicanosWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77234D091B858F6C00823835 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InterfaceController.swift; path = "refranesMexicanosWatch Extension/InterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		77234D0B1B858F6C00823835 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		77234D0D1B858F6C00823835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "refranesMexicanosWatch Extension/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		77234D0F1B858F6C00823835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77234D1E1B8596AF00823835 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		77234D201B859BB300823835 /* RefranesBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefranesBook.swift; sourceTree = "<group>"; };
+		776C527B1B14F899007EA2A7 /* FavoritesListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesListTableViewController.swift; sourceTree = "<group>"; };
 		77B159881B14BB9F009A8EAA /* refranesMexicanos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = refranesMexicanos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B1598C1B14BB9F009A8EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77B1598D1B14BB9F009A8EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77B1598F1B14BB9F009A8EAA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		77B159911B14BB9F009A8EAA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		77B1598F1B14BB9F009A8EAA /* RefranesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RefranesViewController.swift; path = refranesMexicanos/RefranesViewController.swift; sourceTree = SOURCE_ROOT; };
 		77B159941B14BB9F009A8EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77B159961B14BB9F009A8EAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		77B159991B14BB9F009A8EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		77B1599F1B14BB9F009A8EAA /* refranesMexicanosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = refranesMexicanosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B159A41B14BB9F009A8EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77B159A51B14BB9F009A8EAA /* refranesMexicanosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = refranesMexicanosTests.swift; sourceTree = "<group>"; };
+		77B159AF1B14BE9C009A8EAA /* RefranesBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefranesBook.swift; sourceTree = "<group>"; };
+		77B159B11B14D311009A8EAA /* RefranesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefranesDetailViewController.swift; sourceTree = "<group>"; };
+		77C317101B25220100B74529 /* PresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentationViewController.swift; path = ../PresentationViewController.swift; sourceTree = "<group>"; };
+		77D312A11B2255A100F94442 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		77EF5E301B292BF600D51443 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		77234D011B858F6C00823835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77B159851B14BB9F009A8EAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,12 +132,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77234CF91B858F6C00823835 /* refranesMexicanosWatch */ = {
+			isa = PBXGroup;
+			children = (
+				77234CFA1B858F6C00823835 /* Interface.storyboard */,
+				77234CFD1B858F6C00823835 /* Assets.xcassets */,
+				77234CFF1B858F6C00823835 /* Info.plist */,
+				77234D1E1B8596AF00823835 /* Images.xcassets */,
+			);
+			path = refranesMexicanosWatch;
+			sourceTree = "<group>";
+		};
+		77234D081B858F6C00823835 /* refranesMexicanosWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				77234D091B858F6C00823835 /* InterfaceController.swift */,
+				77234D201B859BB300823835 /* RefranesBook.swift */,
+				77234D0B1B858F6C00823835 /* ExtensionDelegate.swift */,
+				77234D0D1B858F6C00823835 /* Assets.xcassets */,
+				77234D0F1B858F6C00823835 /* Info.plist */,
+			);
+			path = "refranesMexicanosWatch Extension";
+			sourceTree = "<group>";
+		};
 		77B1597F1B14BB9E009A8EAA = {
 			isa = PBXGroup;
 			children = (
 				77B1598A1B14BB9F009A8EAA /* refranesMexicanos */,
-				77B159A21B14BB9F009A8EAA /* refranesMexicanosTests */,
+				77234CF91B858F6C00823835 /* refranesMexicanosWatch */,
+				77234D081B858F6C00823835 /* refranesMexicanosWatch Extension */,
 				77B159891B14BB9F009A8EAA /* Products */,
+				77B159A21B14BB9F009A8EAA /* refranesMexicanosTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +171,8 @@
 			children = (
 				77B159881B14BB9F009A8EAA /* refranesMexicanos.app */,
 				77B1599F1B14BB9F009A8EAA /* refranesMexicanosTests.xctest */,
+				77234CF81B858F6C00823835 /* refranesMexicanosWatch.app */,
+				77234D041B858F6C00823835 /* refranesMexicanosWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,12 +180,12 @@
 		77B1598A1B14BB9F009A8EAA /* refranesMexicanos */ = {
 			isa = PBXGroup;
 			children = (
-				77B1598D1B14BB9F009A8EAA /* AppDelegate.swift */,
-				77B1598F1B14BB9F009A8EAA /* FirstViewController.swift */,
-				77B159911B14BB9F009A8EAA /* SecondViewController.swift */,
+				77B1598F1B14BB9F009A8EAA /* RefranesViewController.swift */,
+				77B159B11B14D311009A8EAA /* RefranesDetailViewController.swift */,
+				77C317101B25220100B74529 /* PresentationViewController.swift */,
+				77EF5E301B292BF600D51443 /* SettingsTableViewController.swift */,
+				776C527B1B14F899007EA2A7 /* FavoritesListTableViewController.swift */,
 				77B159931B14BB9F009A8EAA /* Main.storyboard */,
-				77B159961B14BB9F009A8EAA /* Images.xcassets */,
-				77B159981B14BB9F009A8EAA /* LaunchScreen.xib */,
 				77B1598B1B14BB9F009A8EAA /* Supporting Files */,
 			);
 			path = refranesMexicanos;
@@ -93,6 +194,10 @@
 		77B1598B1B14BB9F009A8EAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				77B159AF1B14BE9C009A8EAA /* RefranesBook.swift */,
+				77B159961B14BB9F009A8EAA /* Images.xcassets */,
+				77D312A11B2255A100F94442 /* MyPlayground.playground */,
+				77B1598D1B14BB9F009A8EAA /* AppDelegate.swift */,
 				77B1598C1B14BB9F009A8EAA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -118,6 +223,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		77234CF71B858F6C00823835 /* refranesMexicanosWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77234D191B858F6C00823835 /* Build configuration list for PBXNativeTarget "refranesMexicanosWatch" */;
+			buildPhases = (
+				77234CF61B858F6C00823835 /* Resources */,
+				77234D181B858F6C00823835 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77234D071B858F6C00823835 /* PBXTargetDependency */,
+			);
+			name = refranesMexicanosWatch;
+			productName = refranesMexicanosWatch;
+			productReference = 77234CF81B858F6C00823835 /* refranesMexicanosWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		77234D031B858F6C00823835 /* refranesMexicanosWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77234D171B858F6C00823835 /* Build configuration list for PBXNativeTarget "refranesMexicanosWatch Extension" */;
+			buildPhases = (
+				77234D001B858F6C00823835 /* Sources */,
+				77234D011B858F6C00823835 /* Frameworks */,
+				77234D021B858F6C00823835 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "refranesMexicanosWatch Extension";
+			productName = "refranesMexicanosWatch Extension";
+			productReference = 77234D041B858F6C00823835 /* refranesMexicanosWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		77B159871B14BB9F009A8EAA /* refranesMexicanos */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77B159A91B14BB9F009A8EAA /* Build configuration list for PBXNativeTarget "refranesMexicanos" */;
@@ -125,10 +264,12 @@
 				77B159841B14BB9F009A8EAA /* Sources */,
 				77B159851B14BB9F009A8EAA /* Frameworks */,
 				77B159861B14BB9F009A8EAA /* Resources */,
+				77ED83541B38E1A100305A45 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				77234D111B858F6C00823835 /* PBXTargetDependency */,
 			);
 			name = refranesMexicanos;
 			productName = refranesMexicanos;
@@ -159,11 +300,26 @@
 		77B159801B14BB9E009A8EAA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "César Guadarrama";
 				TargetAttributes = {
+					77234CF71B858F6C00823835 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = AUR7UR6M72;
+					};
+					77234D031B858F6C00823835 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = AUR7UR6M72;
+					};
 					77B159871B14BB9F009A8EAA = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = AUR7UR6M72;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					77B1599E1B14BB9F009A8EAA = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -176,7 +332,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 77B1597F1B14BB9E009A8EAA;
@@ -186,17 +341,36 @@
 			targets = (
 				77B159871B14BB9F009A8EAA /* refranesMexicanos */,
 				77B1599E1B14BB9F009A8EAA /* refranesMexicanosTests */,
+				77234CF71B858F6C00823835 /* refranesMexicanosWatch */,
+				77234D031B858F6C00823835 /* refranesMexicanosWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		77234CF61B858F6C00823835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77234D1F1B8596AF00823835 /* Images.xcassets in Resources */,
+				77234CFE1B858F6C00823835 /* Assets.xcassets in Resources */,
+				77234CFC1B858F6C00823835 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77234D021B858F6C00823835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77234D0E1B858F6C00823835 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77B159861B14BB9F009A8EAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				77B159951B14BB9F009A8EAA /* Main.storyboard in Resources */,
-				77B1599A1B14BB9F009A8EAA /* LaunchScreen.xib in Resources */,
 				77B159971B14BB9F009A8EAA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,13 +385,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		77234D001B858F6C00823835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77234D0C1B858F6C00823835 /* ExtensionDelegate.swift in Sources */,
+				77234D211B859BB300823835 /* RefranesBook.swift in Sources */,
+				77234D0A1B858F6C00823835 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77B159841B14BB9F009A8EAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77B159921B14BB9F009A8EAA /* SecondViewController.swift in Sources */,
+				77B159B21B14D311009A8EAA /* RefranesDetailViewController.swift in Sources */,
+				77234D1D1B85934200823835 /* InterfaceController.swift in Sources */,
 				77B1598E1B14BB9F009A8EAA /* AppDelegate.swift in Sources */,
-				77B159901B14BB9F009A8EAA /* FirstViewController.swift in Sources */,
+				776C527C1B14F899007EA2A7 /* FavoritesListTableViewController.swift in Sources */,
+				77B159B01B14BE9C009A8EAA /* RefranesBook.swift in Sources */,
+				77EF5E311B292BF600D51443 /* SettingsTableViewController.swift in Sources */,
+				77C317111B25220100B74529 /* PresentationViewController.swift in Sources */,
+				77B159901B14BB9F009A8EAA /* RefranesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +421,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		77234D071B858F6C00823835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77234D031B858F6C00823835 /* refranesMexicanosWatch Extension */;
+			targetProxy = 77234D061B858F6C00823835 /* PBXContainerItemProxy */;
+		};
+		77234D111B858F6C00823835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77234CF71B858F6C00823835 /* refranesMexicanosWatch */;
+			targetProxy = 77234D101B858F6C00823835 /* PBXContainerItemProxy */;
+		};
 		77B159A11B14BB9F009A8EAA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 77B159871B14BB9F009A8EAA /* refranesMexicanos */;
@@ -240,6 +439,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		77234CFA1B858F6C00823835 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77234CFB1B858F6C00823835 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		77B159931B14BB9F009A8EAA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -248,17 +455,81 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		77B159981B14BB9F009A8EAA /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77B159991B14BB9F009A8EAA /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		77234D131B858F6C00823835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = WatchAppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = refranesMexicanosWatch_Extension;
+				INFOPLIST_FILE = refranesMexicanosWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesargdm.refranesMexicanos.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		77234D141B858F6C00823835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = WatchAppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = refranesMexicanosWatch_Extension;
+				INFOPLIST_FILE = refranesMexicanosWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesargdm.refranesMexicanos.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		77234D151B858F6C00823835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "refranesMexicanosWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesargdm.refranesMexicanos.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		77234D161B858F6C00823835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "refranesMexicanosWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesargdm.refranesMexicanos.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		77B159A71B14BB9F009A8EAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -280,6 +551,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -295,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +605,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -344,9 +616,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = refranesMexicanos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cesargdm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -354,16 +632,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = refranesMexicanos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cesargdm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		77B159AD1B14BB9F009A8EAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -374,6 +657,7 @@
 				);
 				INFOPLIST_FILE = refranesMexicanosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cesargdm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/refranesMexicanos.app/refranesMexicanos";
 			};
@@ -382,13 +666,13 @@
 		77B159AE1B14BB9F009A8EAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = refranesMexicanosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cesargdm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/refranesMexicanos.app/refranesMexicanos";
 			};
@@ -397,6 +681,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		77234D171B858F6C00823835 /* Build configuration list for PBXNativeTarget "refranesMexicanosWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77234D151B858F6C00823835 /* Debug */,
+				77234D161B858F6C00823835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77234D191B858F6C00823835 /* Build configuration list for PBXNativeTarget "refranesMexicanosWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77234D131B858F6C00823835 /* Debug */,
+				77234D141B858F6C00823835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		77B159831B14BB9E009A8EAA /* Build configuration list for PBXProject "refranesMexicanos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -413,6 +715,7 @@
 				77B159AB1B14BB9F009A8EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77B159AC1B14BB9F009A8EAA /* Build configuration list for PBXNativeTarget "refranesMexicanosTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +724,7 @@
 				77B159AE1B14BB9F009A8EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

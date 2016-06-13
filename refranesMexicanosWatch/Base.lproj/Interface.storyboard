@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15A279b" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+    </dependencies>
+    <scenes>
+        <!--Refranes-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Refranes" hidesWhenLoading="NO" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="refranesMexicanosWatch" customModuleProvider="target">
+                    <items>
+                        <label height="110" alignment="left" text="Aquí va un excelente dicho o refrán mexicano." textAlignment="left" numberOfLines="0" id="JAM-Sj-KL2">
+                            <variation key="device=watch38mm" height="109"/>
+                            <variation key="device=watch42mm" height="132"/>
+                        </label>
+                        <button width="1" alignment="left" title="Siguiente" id="W6i-px-a6X">
+                            <color key="backgroundColor" red="0.87058823529999996" green="0.16862745100000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="nextButton" destination="AgC-eL-Hgc" id="apr-3z-nuY"/>
+                            </connections>
+                        </button>
+                        <label width="1" height="50" alignment="left" text="Significado" id="kDn-Ym-m1V">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label alignment="left" text="Aquí va el significado de un excelente dicho o refrán mexicano." numberOfLines="0" id="Mdn-jx-KEu">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="refranLabel" destination="JAM-Sj-KL2" id="O1e-jT-jeQ"/>
+                        <outlet property="significadoHeadline" destination="kDn-Ym-m1V" id="BLh-oi-d01"/>
+                        <outlet property="significadoLabel" destination="Mdn-jx-KEu" id="9Do-93-oIQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="342" y="289.5"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.87058823529999996" green="0.16862745100000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
