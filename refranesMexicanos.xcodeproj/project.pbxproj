@@ -180,6 +180,8 @@
 		77B1598A1B14BB9F009A8EAA /* refranesMexicanos */ = {
 			isa = PBXGroup;
 			children = (
+				77B159AF1B14BE9C009A8EAA /* RefranesBook.swift */,
+				77B1598D1B14BB9F009A8EAA /* AppDelegate.swift */,
 				77B1598F1B14BB9F009A8EAA /* RefranesViewController.swift */,
 				77B159B11B14D311009A8EAA /* RefranesDetailViewController.swift */,
 				77C317101B25220100B74529 /* PresentationViewController.swift */,
@@ -194,10 +196,8 @@
 		77B1598B1B14BB9F009A8EAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				77B159AF1B14BE9C009A8EAA /* RefranesBook.swift */,
 				77B159961B14BB9F009A8EAA /* Images.xcassets */,
 				77D312A11B2255A100F94442 /* MyPlayground.playground */,
-				77B1598D1B14BB9F009A8EAA /* AppDelegate.swift */,
 				77B1598C1B14BB9F009A8EAA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -301,20 +301,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "César Guadarrama";
 				TargetAttributes = {
 					77234CF71B858F6C00823835 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = AUR7UR6M72;
+						LastSwiftMigration = 0820;
 					};
 					77234D031B858F6C00823835 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = AUR7UR6M72;
+						LastSwiftMigration = 0820;
 					};
 					77B159871B14BB9F009A8EAA = {
 						CreatedOnToolsVersion = 6.3.2;
 						DevelopmentTeam = AUR7UR6M72;
+						LastSwiftMigration = 0820;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -323,6 +326,7 @@
 					};
 					77B1599E1B14BB9F009A8EAA = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0820;
 						TestTargetID = 77B159871B14BB9F009A8EAA;
 					};
 				};
@@ -461,17 +465,18 @@
 		77234D131B858F6C00823835 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = WatchAppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = refranesMexicanosWatch_Extension;
 				INFOPLIST_FILE = refranesMexicanosWatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesargdm.refranesMexicanos.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -480,16 +485,17 @@
 		77234D141B858F6C00823835 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = WatchAppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = refranesMexicanosWatch_Extension;
 				INFOPLIST_FILE = refranesMexicanosWatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesargdm.refranesMexicanos.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -508,6 +514,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -525,6 +532,7 @@
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -543,8 +551,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -588,8 +598,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -608,6 +620,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -624,6 +637,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cesargdm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -640,6 +654,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cesargdm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -659,6 +674,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cesargdm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/refranesMexicanos.app/refranesMexicanos";
 			};
 			name = Debug;
@@ -674,6 +690,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cesargdm.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/refranesMexicanos.app/refranesMexicanos";
 			};
 			name = Release;

@@ -541,6 +541,14 @@ struct RefranesBook {
             "tipo" : "Refrán"
         ],
         //
+        //      V
+        //
+        [
+            "refran": "Ve burro y se le antoja viaje.",
+            "significado" : "",
+            "tipo" : "Dicho"
+        ],
+        //
         //      Y
         //
         [

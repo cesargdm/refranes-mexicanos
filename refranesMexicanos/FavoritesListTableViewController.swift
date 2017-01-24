@@ -24,42 +24,42 @@ class FavoritesListTableViewController: UITableViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
         
         //Declare the message label attributes
         messageLabel.text = "No hay favoritos."
         messageLabel.textColor = UIColor(red: 0.77843, green: 0.77843, blue: 0.77843, alpha: 1.0)
         messageLabel.font = UIFont(descriptor: UIFontDescriptor(), size: 25.0)
-        messageLabel.textAlignment = NSTextAlignment.Center;
+        messageLabel.textAlignment = NSTextAlignment.center;
         
         //Reloading
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(FavoritesListTableViewController.loadList(_:)),name:"load", object: nil)
-        NSNotificationCenter.defaultCenter().postNotificationName("load", object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(FavoritesListTableViewController.loadList(_:)),name:NSNotification.Name(rawValue: "load"), object: nil)
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "load"), object: nil)
         
         print("LOOKING AT FAVORITES")
         
     }
 
-    func loadList(notification: NSNotification){
+    func loadList(_ notification: Notification){
         self.tableView.reloadData()
         //Sets message if there's no favorite
         if favoritesArray.count == 0 {
-            messageLabel.hidden = false; //Show messageLabel
+            messageLabel.isHidden = false; //Show messageLabel
             self.tableView.separatorColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.0)
             self.tableView.backgroundView = messageLabel
         } else { //Set message hidden and set back the separator colors
-            messageLabel.hidden = true;
+            messageLabel.isHidden = true;
             self.tableView.separatorColor = UIColor(red: 0.87843, green: 0.87843, blue: 0.87843, alpha: 1.0)
         }
     }
 
     //Getting the title value of the touched cell
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         print("YOU TOUCHED A CELL!")
         
         //Get the Cell title and asign it to selected(Global)Refran
-        selectedRefran = tableView.cellForRowAtIndexPath(indexPath)!.textLabel!.text!
+        selectedRefran = tableView.cellForRow(at: indexPath)!.textLabel!.text!
         
         var refranInfo:[String:String] = findRefranInfo(selectedRefran)!
         
@@ -73,23 +73,23 @@ class FavoritesListTableViewController: UITableViewController {
     }
     
     //Setting rows in section --- DONE
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return favoritesArray.count
     }
     
     //Working on...
-    func findRefranInfo(refran:String) -> [String:String]? {
-        for (var i = 0; i < favoritesArray.count; i += 1) {
-            if favoritesArray[i]["refran"] == refran {
-                return favoritesArray[i]
+    func findRefranInfo(_ refran:String) -> [String:String]? {
+        for index in 0 ..< favoritesArray.count {
+            if favoritesArray[index]["refran"] == refran {
+                return favoritesArray[index]
             }
         }
         return nil
     }
     
     //Seting cells
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("refranCell", forIndexPath: indexPath) as UITableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "refranCell", for: indexPath) as UITableViewCell
         cell.textLabel?.text = favoritesArray[indexPath.row]["refran"] //Set the refran text to the table
         
         return cell

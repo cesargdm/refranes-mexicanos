@@ -10,17 +10,17 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
 
-    @IBAction func rateAppButton(sender: AnyObject) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://itunes.apple.com/app/id994013535")!)
+    @IBAction func rateAppButton(_ sender: AnyObject) {
+        UIApplication.shared.openURL(URL(string: "http://itunes.apple.com/app/id994013535")!)
     }
     
     @IBAction func supportButton() {
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://cesargdm.com/refranesmexicanos")!)
+        UIApplication.shared.openURL(URL(string: "http://cesargdm.com/refranesmexicanos")!)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
     }
 
     override func didReceiveMemoryWarning() {

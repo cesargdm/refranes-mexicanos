@@ -27,7 +27,7 @@ class RefranesDetailViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
 
         print(segueRefranDictionary)
 //        significado = segueRefranDictionary["significado"]
@@ -55,9 +55,9 @@ class RefranesDetailViewController: UIViewController {
 
 //        Check if refran is in the favorites array
         if (findRefran(refran) == true) { //Set the star as filled
-            favoriteButton.setImage(filledStarImage, forState: UIControlState())
+            favoriteButton.setImage(filledStarImage, for: UIControlState())
         } else { //Set the star as normal
-            favoriteButton.setImage(starImage, forState: UIControlState())
+            favoriteButton.setImage(starImage, for: UIControlState())
         }
         print("Refran: \(refranLabel.text)")
         print("Significado: \(refranDetailLabel.text)")
@@ -70,30 +70,30 @@ class RefranesDetailViewController: UIViewController {
 
         let objectsToShare = [textToShare, reference]
         let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
-        self.presentViewController(activityVC, animated: true, completion: nil)
+        self.present(activityVC, animated: true, completion: nil)
     }
     
     //Look if the refran is in the favorites array
-    func findRefran(refran:String) -> Bool {
-        for (var i = 0; i < favoritesArray.count; i++) {
-            if favoritesArray[i]["refran"] == refran {
+    func findRefran(_ refran:String) -> Bool {
+        for index in 0 ..< favoritesArray.count {
+            if favoritesArray[index]["refran"] == refran {
                 return true
             }
         }
         return false
     }
     
-    func findRefranIndex(refran:String) -> Int {
-        for (var i = 0; i < favoritesArray.count; i++) {
-            if favoritesArray[i]["refran"] == refran {
-                return i
+    func findRefranIndex(_ refran:String) -> Int {
+        for index in 0 ..< favoritesArray.count {
+            if favoritesArray[index]["refran"] == refran {
+                return index
             }
         }
         return 0
     }
     
     //Set refran to the favorites array
-    func setRefranDictionaries (refranDicionary:[String:String]) {
+    func setRefranDictionaries (_ refranDicionary:[String:String]) {
         favoritesArray.append(refranDicionary)
     }
     
@@ -103,15 +103,15 @@ class RefranesDetailViewController: UIViewController {
         if (findRefran(refran) == false) { //Adding refran to favorites array
             print("\nREFRAN NOT FOUND SETTING FAVORITE " + refran)
             setRefranDictionaries(refranDictionary)
-            favoriteButton.setImage(filledStarImage, forState: UIControlState())
+            favoriteButton.setImage(filledStarImage, for: UIControlState())
         } else { //Removing star and deleting from favorites array
             print("\nREFRAN FOUND... DELETING FROM FAVORITES")
-            favoritesArray.removeAtIndex(findRefranIndex(refran))
-            favoriteButton.setImage(starImage, forState: UIControlState())
+            favoritesArray.remove(at: findRefranIndex(refran))
+            favoriteButton.setImage(starImage, for: UIControlState())
         }
         
         //Reloading table
-        NSNotificationCenter.defaultCenter().postNotificationName("load", object: nil)
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "load"), object: nil)
     }
     
     override func didReceiveMemoryWarning() {

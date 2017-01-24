@@ -26,21 +26,21 @@ class RefranesViewController: UIViewController {
         self.tabBarItem.selectedImage = UIImage(named: "sombrero-filled")
         
         //Button text properties
-        refranButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left;
-        refranButton.contentVerticalAlignment = UIControlContentVerticalAlignment.Center;
+        refranButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left;
+        refranButton.contentVerticalAlignment = UIControlContentVerticalAlignment.center;
         refranButton.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
         
         //Set the refranButton title to a new random refran
         refranDictionary = refranesBook.randomRefran()
         refran = refranDictionary["refran"]! //Get the refran
         refranDetail = refranDictionary["significado"]! //Get the mening of the refran
-        refranButton.setTitle(refran, forState: UIControlState.Normal)
+        refranButton.setTitle(refran, for: UIControlState())
         
         //Gesture recognizers
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(RefranesViewController.leftSwiped))
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(RefranesViewController.rightSwiped))
-        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
-        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.view.addGestureRecognizer(swipeLeft)
         self.view.addGestureRecognizer(swipeRight)
 
@@ -56,16 +56,16 @@ class RefranesViewController: UIViewController {
         
         refran = refranDictionary["refran"]! //Get the refran
         refranDetail = refranDictionary["significado"]! //Get the meaning of the refran
-        refranButton.setTitle(refran, forState: UIControlState.Normal)
+        refranButton.setTitle(refran, for: UIControlState())
 
     }
     
     //Sends the refran to the DetailView
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Use the segue parameter in the method
         if (segue.identifier == "showRefranDetail") {
             //Check if we are passing the information in to the right segue
-            let refranesDetailViewController = segue.destinationViewController as! RefranesDetailViewController
+            let refranesDetailViewController = segue.destination as! RefranesDetailViewController
             //Sends the refranButton title to the segueLabelText
             refranesDetailViewController.segueRefranDictionary = refranDictionary //Send the whole dictionary
         }
