@@ -7,7 +7,7 @@
 import Foundation
 
 struct RefranesBook {
-    let refranesArray =
+    public static let refranesArray =
     [
         //
         //      A
@@ -572,8 +572,7 @@ struct RefranesBook {
     ]
     
     func randomRefran() -> [String:String] {
-        let randomNumber = Int(arc4random_uniform(UInt32(refranesArray.count)))
-        print(refranesArray.count)
-        return refranesArray[randomNumber]
+        let randomNumber = Int(arc4random_uniform(UInt32(RefranesBook.refranesArray.count)))
+        return RefranesBook.refranesArray[randomNumber]
     }
 }

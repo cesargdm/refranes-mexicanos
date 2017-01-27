@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052CFE621E37FFD100E7B957 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CFE611E37FFD100E7B957 /* SearchTableViewController.swift */; };
 		77234CFC1B858F6C00823835 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77234CFA1B858F6C00823835 /* Interface.storyboard */; };
 		77234CFE1B858F6C00823835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77234CFD1B858F6C00823835 /* Assets.xcassets */; };
 		77234D051B858F6C00823835 /* refranesMexicanosWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77234D041B858F6C00823835 /* refranesMexicanosWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -15,7 +16,6 @@
 		77234D0E1B858F6C00823835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77234D0D1B858F6C00823835 /* Assets.xcassets */; };
 		77234D121B858F6C00823835 /* refranesMexicanosWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 77234CF81B858F6C00823835 /* refranesMexicanosWatch.app */; };
 		77234D1D1B85934200823835 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77234D091B858F6C00823835 /* InterfaceController.swift */; };
-		77234D1F1B8596AF00823835 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77234D1E1B8596AF00823835 /* Images.xcassets */; };
 		77234D211B859BB300823835 /* RefranesBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77234D201B859BB300823835 /* RefranesBook.swift */; };
 		776C527C1B14F899007EA2A7 /* FavoritesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776C527B1B14F899007EA2A7 /* FavoritesListTableViewController.swift */; };
 		77B1598E1B14BB9F009A8EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B1598D1B14BB9F009A8EAA /* AppDelegate.swift */; };
@@ -25,7 +25,6 @@
 		77B159A61B14BB9F009A8EAA /* refranesMexicanosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B159A51B14BB9F009A8EAA /* refranesMexicanosTests.swift */; };
 		77B159B01B14BE9C009A8EAA /* RefranesBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B159AF1B14BE9C009A8EAA /* RefranesBook.swift */; };
 		77B159B21B14D311009A8EAA /* RefranesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B159B11B14D311009A8EAA /* RefranesDetailViewController.swift */; };
-		77C317111B25220100B74529 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C317101B25220100B74529 /* PresentationViewController.swift */; };
 		77EF5E311B292BF600D51443 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF5E301B292BF600D51443 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		052CFE611E37FFD100E7B957 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		77234CF81B858F6C00823835 /* refranesMexicanosWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = refranesMexicanosWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77234CFB1B858F6C00823835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		77234CFD1B858F6C00823835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,7 +88,6 @@
 		77234D0B1B858F6C00823835 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		77234D0D1B858F6C00823835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "refranesMexicanosWatch Extension/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		77234D0F1B858F6C00823835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77234D1E1B8596AF00823835 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		77234D201B859BB300823835 /* RefranesBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefranesBook.swift; sourceTree = "<group>"; };
 		776C527B1B14F899007EA2A7 /* FavoritesListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesListTableViewController.swift; sourceTree = "<group>"; };
 		77B159881B14BB9F009A8EAA /* refranesMexicanos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = refranesMexicanos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +101,6 @@
 		77B159A51B14BB9F009A8EAA /* refranesMexicanosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = refranesMexicanosTests.swift; sourceTree = "<group>"; };
 		77B159AF1B14BE9C009A8EAA /* RefranesBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefranesBook.swift; sourceTree = "<group>"; };
 		77B159B11B14D311009A8EAA /* RefranesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefranesDetailViewController.swift; sourceTree = "<group>"; };
-		77C317101B25220100B74529 /* PresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PresentationViewController.swift; path = ../PresentationViewController.swift; sourceTree = "<group>"; };
 		77D312A11B2255A100F94442 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		77EF5E301B292BF600D51443 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,7 +136,6 @@
 				77234CFA1B858F6C00823835 /* Interface.storyboard */,
 				77234CFD1B858F6C00823835 /* Assets.xcassets */,
 				77234CFF1B858F6C00823835 /* Info.plist */,
-				77234D1E1B8596AF00823835 /* Images.xcassets */,
 			);
 			path = refranesMexicanosWatch;
 			sourceTree = "<group>";
@@ -184,10 +181,10 @@
 				77B1598D1B14BB9F009A8EAA /* AppDelegate.swift */,
 				77B1598F1B14BB9F009A8EAA /* RefranesViewController.swift */,
 				77B159B11B14D311009A8EAA /* RefranesDetailViewController.swift */,
-				77C317101B25220100B74529 /* PresentationViewController.swift */,
 				77EF5E301B292BF600D51443 /* SettingsTableViewController.swift */,
 				776C527B1B14F899007EA2A7 /* FavoritesListTableViewController.swift */,
 				77B159931B14BB9F009A8EAA /* Main.storyboard */,
+				052CFE611E37FFD100E7B957 /* SearchTableViewController.swift */,
 				77B1598B1B14BB9F009A8EAA /* Supporting Files */,
 			);
 			path = refranesMexicanos;
@@ -356,7 +353,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77234D1F1B8596AF00823835 /* Images.xcassets in Resources */,
 				77234CFE1B858F6C00823835 /* Assets.xcassets in Resources */,
 				77234CFC1B858F6C00823835 /* Interface.storyboard in Resources */,
 			);
@@ -404,12 +400,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				77B159B21B14D311009A8EAA /* RefranesDetailViewController.swift in Sources */,
+				052CFE621E37FFD100E7B957 /* SearchTableViewController.swift in Sources */,
 				77234D1D1B85934200823835 /* InterfaceController.swift in Sources */,
 				77B1598E1B14BB9F009A8EAA /* AppDelegate.swift in Sources */,
 				776C527C1B14F899007EA2A7 /* FavoritesListTableViewController.swift in Sources */,
 				77B159B01B14BE9C009A8EAA /* RefranesBook.swift in Sources */,
 				77EF5E311B292BF600D51443 /* SettingsTableViewController.swift in Sources */,
-				77C317111B25220100B74529 /* PresentationViewController.swift in Sources */,
 				77B159901B14BB9F009A8EAA /* RefranesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

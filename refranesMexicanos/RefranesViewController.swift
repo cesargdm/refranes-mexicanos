@@ -22,9 +22,7 @@ class RefranesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tabBarItem.selectedImage = UIImage(named: "sombrero-filled")
-        
+                
         //Button text properties
         refranButton.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left;
         refranButton.contentVerticalAlignment = UIControlContentVerticalAlignment.center;
@@ -39,8 +37,10 @@ class RefranesViewController: UIViewController {
         //Gesture recognizers
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(RefranesViewController.leftSwiped))
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(RefranesViewController.rightSwiped))
+        
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        
         self.view.addGestureRecognizer(swipeLeft)
         self.view.addGestureRecognizer(swipeRight)
 
@@ -54,6 +54,11 @@ class RefranesViewController: UIViewController {
     func leftSwiped() {
         refranDictionary = refranesBook.randomRefran()
         
+        
+        UIView.animate(withDuration: TimeInterval(0.5), delay: 0, options: .curveEaseInOut, animations: {
+            self.refranButton.center.x -= self.view.frame.width
+        }, completion: nil)
+        
         refran = refranDictionary["refran"]! //Get the refran
         refranDetail = refranDictionary["significado"]! //Get the meaning of the refran
         refranButton.setTitle(refran, for: UIControlState())
@@ -64,10 +69,11 @@ class RefranesViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Use the segue parameter in the method
         if (segue.identifier == "showRefranDetail") {
-            //Check if we are passing the information in to the right segue
+
             let refranesDetailViewController = segue.destination as! RefranesDetailViewController
-            //Sends the refranButton title to the segueLabelText
-            refranesDetailViewController.segueRefranDictionary = refranDictionary //Send the whole dictionary
+
+            refranesDetailViewController.refranDictionary = refranDictionary
+        
         }
     }
     

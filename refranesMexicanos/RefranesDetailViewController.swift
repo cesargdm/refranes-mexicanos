@@ -14,54 +14,38 @@ class RefranesDetailViewController: UIViewController {
     @IBOutlet var refranDetailLabel: UILabel!
     @IBOutlet var refranTypeLabel: UILabel!
     @IBOutlet var refranLabel: UILabel!
+    @IBOutlet weak var mosaicView: UIView!
     
-    var segueRefranDictionary:[String:String] = [String:String]()
     var refranDictionary = [String:String]()
-    var refran:String!
-    var significado:String!
-    var tipo:String!
-    var filledStarImage:UIImage = UIImage(named: "star-full")!
-    var starImage:UIImage = UIImage(named: "star")!
-    let reference = "\nvia Refranes Mexicanos \nhttps://appsto.re/mx/Ff3p7.i"
+    private var refran:String!
+    private var significado:String!
+    private var tipo:String!
+    private let filledStarImage:UIImage = UIImage(named: "star-full")!
+    private let starImage:UIImage = UIImage(named: "star")!
+    private let reference = "\nvia Refranes Mexicanos \nhttps://appsto.re/mx/Ff3p7.i"
     
     override func viewDidLoad() {
 
         super.viewDidLoad()
         UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
 
-        print(segueRefranDictionary)
-//        significado = segueRefranDictionary["significado"]
+        refran = refranDictionary["refran"]
+        significado = refranDictionary["significado"]
+        tipo = refranDictionary["tipo"]
         
-        if (segueRefranDictionary["refran"] != nil) { //If the call comes from a segue...
-            refran = segueRefranDictionary["refran"]
-            significado = segueRefranDictionary["significado"]
-            tipo = segueRefranDictionary["tipo"]
-            refranDictionary = segueRefranDictionary
-            print("SEGUE")
-        } else { //If the call comes from favorites list, it calls the global variables
-            refran = selectedRefran
-            significado = refranMeaning
-            tipo = refranType
-            refranDictionary = ["refran":refran,"significado":significado]
-            print("FAVORITES")
-        }
-        
-        print("Refran: \(refran)")
-        print("Significado: \(significado)")
-        
-        refranLabel.text = refran //Set refran label to the refran value
-        refranDetailLabel.text = significado //Set the meaning label to the significado value
+        refranLabel.text = refran
+        refranDetailLabel.text = significado
         refranTypeLabel.text = tipo
 
-//        Check if refran is in the favorites array
-        if (findRefran(refran) == true) { //Set the star as filled
+        //Check if refran is in the favorites array
+        if refranIsFavorite(refran) {
             favoriteButton.setImage(filledStarImage, for: UIControlState())
-        } else { //Set the star as normal
+        } else {
             favoriteButton.setImage(starImage, for: UIControlState())
         }
-        print("Refran: \(refranLabel.text)")
-        print("Significado: \(refranDetailLabel.text)")
-        print("Significado: \(refranDetailLabel.text)")
+        
+        mosaicView.backgroundColor = UIColor(patternImage: UIImage(named: "mosaic-\(arc4random_uniform(5))")!)
+
     }
     
     //Sharing refran
@@ -74,7 +58,7 @@ class RefranesDetailViewController: UIViewController {
     }
     
     //Look if the refran is in the favorites array
-    func findRefran(_ refran:String) -> Bool {
+    func refranIsFavorite(_ refran:String) -> Bool {
         for index in 0 ..< favoritesArray.count {
             if favoritesArray[index]["refran"] == refran {
                 return true
@@ -100,17 +84,14 @@ class RefranesDetailViewController: UIViewController {
     @IBAction func setFavorite() {
         let refran:String = refranLabel.text!
 
-        if (findRefran(refran) == false) { //Adding refran to favorites array
-            print("\nREFRAN NOT FOUND SETTING FAVORITE " + refran)
+        if refranIsFavorite(refran) == false { //Adding refran to favorites array
             setRefranDictionaries(refranDictionary)
             favoriteButton.setImage(filledStarImage, for: UIControlState())
         } else { //Removing star and deleting from favorites array
-            print("\nREFRAN FOUND... DELETING FROM FAVORITES")
             favoritesArray.remove(at: findRefranIndex(refran))
             favoriteButton.setImage(starImage, for: UIControlState())
         }
         
-        //Reloading table
         NotificationCenter.default.post(name: Notification.Name(rawValue: "load"), object: nil)
     }
     
