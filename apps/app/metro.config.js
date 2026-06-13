@@ -1,0 +1,19 @@
+// Metro config for the bun-workspaces monorepo.
+// Watches the repo root so @refranes/data resolves, and pins module
+// resolution to both the app and the hoisted root node_modules.
+const { getDefaultConfig } = require('expo/metro-config')
+const path = require('path')
+
+const projectRoot = __dirname
+const workspaceRoot = path.resolve(projectRoot, '../..')
+
+const config = getDefaultConfig(projectRoot)
+
+config.watchFolders = [workspaceRoot]
+config.resolver.nodeModulesPaths = [
+  path.resolve(projectRoot, 'node_modules'),
+  path.resolve(workspaceRoot, 'node_modules'),
+]
+config.resolver.disableHierarchicalLookup = true
+
+module.exports = config
