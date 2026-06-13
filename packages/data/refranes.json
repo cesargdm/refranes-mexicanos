@@ -1,0 +1,614 @@
+[
+	{
+		"id": "a-falta-de-pan-tortillas",
+		"refran": "A falta de pan, tortillas.",
+		"significado": "Cuando no se tiene un recurso indispensable, como el pan en la comida, siempre hay un sustituto que puede cumplir la misma función; en este caso, las tortillas.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "a-caballo-regalado-no-se-le-ve-colmillo",
+		"refran": "A caballo regalado, no se le ve colmillo.",
+		"significado": "Cuando se recibe un regalo no conviene juzgar sus defectos ni su calidad, pues no costó nada propio. Se decía que por los colmillos se calcula la edad de un caballo, así que revisarlos sería despreciar el obsequio.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "a-chillidos-de-puerco-oidos-de-carnicero",
+		"refran": "A chillidos de puerco, oídos de carnicero.",
+		"significado": "Ante quejas y reclamos que no pretendemos atender, lo mejor es permanecer impasibles, igual que el carnicero ya no se conmueve con los chillidos del animal.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "a-darle-que-es-mole-de-olla",
+		"refran": "A darle, que es mole de olla.",
+		"significado": "Es una invitación a ponerse a trabajar con ganas y sin demoras en algo que vale la pena, disfrutándolo como se disfruta un buen mole de olla.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "a-su-tiempo-maduran-las-uvas",
+		"refran": "A su tiempo maduran las uvas.",
+		"significado": "Con tiempo y paciencia las cosas suelen llegar a su punto y mejorar. No hay que precipitarse, pues cada cosa se logra en su momento.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "amor-de-lejos-felices-los-tres",
+		"refran": "Amor de lejos, felices los tres.",
+		"significado": "En una relación a distancia es fácil que aparezca la infidelidad: como los enamorados no se ven, los tres involucrados pueden seguir tan tranquilos sin enterarse.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "aunque-la-mona-se-vista-de-seda-mona-se-queda",
+		"refran": "Aunque la mona se vista de seda, mona se queda.",
+		"significado": "Por más que alguien se arregle o se rodee de cosas finas, su esencia no cambia: sigue siendo lo que es.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "arbol-que-nace-torcido-jamas-su-tronco-endereza",
+		"refran": "Árbol que nace torcido, jamás su tronco endereza.",
+		"significado": "Los defectos o mañas adquiridos desde un principio difícilmente se corrigen con el paso del tiempo; lo que se forma mal de origen tiende a quedarse así.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "al-buen-entendedor-pocas-palabras",
+		"refran": "Al buen entendedor, pocas palabras.",
+		"significado": "A una persona que comprende las cosas con facilidad no hace falta darle muchas explicaciones; con una insinuación basta.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "al-ojo-del-amo-engorda-el-caballo",
+		"refran": "Al ojo del amo, engorda el caballo.",
+		"significado": "Las cosas salen mejor cuando el dueño o responsable las atiende personalmente; la vigilancia y el cuidado directo hacen que todo prospere.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "agua-que-no-has-de-beber-dejala-correr",
+		"refran": "Agua que no has de beber, déjala correr.",
+		"significado": "Aquello que no te corresponde ni te conviene es mejor dejarlo pasar y no entrometerse en ello.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "al-nopal-solo-se-le-arriman-cuando-tiene-tunas",
+		"refran": "Al nopal sólo se le arriman cuando tiene tunas.",
+		"significado": "A las personas sólo se les acercan cuando tienen algo que ofrecer o de qué sacar provecho; en cuanto deja de haber conveniencia, las dejan solas.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "al-que-a-buen-arbol-se-arrima-buena-sombra-le-cobija",
+		"refran": "Al que a buen árbol se arrima, buena sombra le cobija.",
+		"significado": "Quien se relaciona con gente valiosa, influyente o que lo respalda, recibe beneficios y protección por esa buena compañía.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "alegre-el-indio-y-le-das-maracas",
+		"refran": "Alegre el indio y le das maracas.",
+		"significado": "Se dice cuando a alguien que ya está contento o entusiasmado se le da un motivo más para alegrarse, con lo que se anima todavía más y hace aún más ruido.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "agua-pasada-no-mueve-molinos",
+		"refran": "Agua pasada no mueve molinos.",
+		"significado": "Se dice de aquello que ya quedó atrás y superado: como ya pasó, no tiene caso seguir dándole vueltas ni dejar que provoque emociones.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "candil-de-la-calle-obscuridad-de-su-casa",
+		"refran": "Candil de la calle, obscuridad de su casa.",
+		"significado": "Se dice de quien se muestra amable, generoso y servicial con los de afuera, pero descuida y trata mal a su propia familia.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "camaron-que-se-duerme-se-lo-lleva-la-corriente",
+		"refran": "Camarón que se duerme, se lo lleva la corriente.",
+		"significado": "Quien se descuida o se distrae en la vida deja pasar las oportunidades, y un imprevisto puede arrastrarlo. Hay que estar atento y actuar a tiempo.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "cuando-ves-las-barbas-de-tu-vecino-cortar-pon-las-tuyas-a-remojar",
+		"refran": "Cuando veas las barbas de tu vecino cortar, pon las tuyas a remojar.",
+		"significado": "Cuando algo malo le sucede a otro, conviene prevenirse, porque lo mismo podría pasarte a ti. Hay que aprender de lo que les ocurre a los demás.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "cuesta-mas-caro-el-caldo-que-las-albondigas",
+		"refran": "Cuesta más caro el caldo que las albóndigas.",
+		"significado": "Se dice cuando lo accesorio o secundario termina costando más que lo principal, de modo que el remedio o el rodeo sale más caro que el asunto mismo.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "como-te-ves-me-vi-y-como-me-ves-te-veras",
+		"refran": "Como te ves, me vi; y como me ves, te verás.",
+		"significado": "Suele decirlo la gente mayor a los jóvenes: el hijo envejecerá igual que el padre, y el padre alguna vez fue joven como el hijo. Recuerda que el paso del tiempo nos alcanza a todos.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "comes-frijoles-y-eructas-jamon",
+		"refran": "Comes frijoles y eructas jamón.",
+		"significado": "Se le dice a quien presume de tener o ser más de lo que en realidad es; aparenta una posición que no le corresponde.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "con-calma-que-llevo-prisa",
+		"refran": "¡Con calma que llevo prisa!",
+		"significado": "Expresión irónica que recuerda que las cosas hechas con calma y orden salen mejor y más rápido que las hechas con apuro y atropello.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "cuando-hay-para-carne-es-vigilia",
+		"refran": "¡Cuando hay para carne, es vigilia!",
+		"significado": "Se dice con resignación cuando por fin se tienen los recursos para algo, pero justo entonces aparece un impedimento que no deja aprovecharlos.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "del-tamaño-del-sapo-es-la-pedrada",
+		"refran": "Del tamaño del sapo, es la pedrada.",
+		"significado": "La respuesta o la solución debe ser proporcional al tamaño del problema: a un asunto grande, una medida grande; a uno pequeño, una pequeña.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "dar-el-alon-y-comerse-la-pechuga",
+		"refran": "Dar el alón y comerse la pechuga.",
+		"significado": "Se dice de quien reparte a los demás lo de menor valor mientras se queda para sí con lo mejor; aparenta generosidad pero saca la mejor parte.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "dos-agujas-no-se-pican",
+		"refran": "Dos agujas no se pican.",
+		"significado": "Dos personas igual de vivas, astutas o de carácter parecido no se hacen daño entre sí ni logran engañarse, porque se conocen muy bien.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "de-tal-palo-tal-astilla",
+		"refran": "De tal palo, tal astilla.",
+		"significado": "Se dice cuando un hijo se parece mucho a su padre en carácter o conducta, pues hereda y reproduce sus rasgos.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "dime-de-que-presumes-y-te-dire-de-que-careces",
+		"refran": "Dime de qué presumes y te diré de qué careces.",
+		"significado": "Quien presume mucho de algo suele hacerlo justamente porque le falta; la fanfarronería delata las propias carencias.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "del-plato-a-la-boca-nadie-se-equivoca",
+		"refran": "Del plato a la boca, nadie se equivoca.",
+		"significado": "Cuando se trata del propio interés o beneficio, nadie se confunde ni desperdicia la ocasión; cada quien sabe muy bien lo que le conviene.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "del-dicho-al-hecho-hay-mucho-trecho",
+		"refran": "Del dicho al hecho hay mucho trecho.",
+		"significado": "Hay una gran distancia entre prometer o decir algo y realmente cumplirlo; las palabras son fáciles, los hechos no tanto.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "desde-lejos-se-reconoce-que-el-pajaro-es-un-canario",
+		"refran": "Desde lejos se reconoce que el pájaro es un canario.",
+		"significado": "Las grandes cualidades de una persona se notan con facilidad, incluso a la distancia; lo bueno se reconoce de inmediato.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "debajo-del-agua-mansa-esta-la-peor-corriente",
+		"refran": "Debajo del agua mansa está la peor corriente.",
+		"significado": "Aunque alguien aparente ser tranquilo e inofensivo, por dentro puede ocultar un carácter muy distinto y peligroso. Hay que desconfiar de las apariencias demasiado calmadas.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "echando-a-perder-se-aprende",
+		"refran": "Echando a perder se aprende.",
+		"significado": "Por lo general se aprende a base de errores y fracasos; equivocarse es parte del proceso de dominar algo.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "el-leon-no-es-como-lo-pintan",
+		"refran": "El león no es como lo pintan.",
+		"significado": "Cuando se enfrenta un problema cara a cara, suele resultar menos terrible de lo que se había imaginado; las cosas asustan más de lejos.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "el-que-nace-para-maceta-del-corredor-no-pasa",
+		"refran": "El que nace para maceta, del corredor no pasa.",
+		"significado": "Quien nace con aspiraciones o capacidades limitadas difícilmente llega más allá de su condición; cada quien alcanza hasta donde da su naturaleza.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "en-casa-del-jabonero-el-que-no-cae-resbala",
+		"refran": "En casa del jabonero, el que no cae resbala.",
+		"significado": "En un ambiente propenso a cierto error o vicio, es muy difícil librarse de él: si uno no cae de lleno, al menos tropieza.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "entre-menos-burros-mas-olotes",
+		"refran": "Entre menos burros, más olotes.",
+		"significado": "Mientras menos personas haya para repartir algo, más le toca a cada quien; se dice cuando alguien se va y los que quedan salen beneficiados.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "el-flojo-y-el-mezquino-andan-dos-veces-por-el-mismo-camino",
+		"refran": "El flojo y el mezquino andan dos veces por el mismo camino.",
+		"significado": "Quien por flojera o tacañería no hace bien las cosas a la primera, termina teniendo que repetir el esfuerzo; al final lo barato y lo flojo sale más caro.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "el-comal-le-dijo-a-la-olla",
+		"refran": "El comal le dijo a la olla.",
+		"significado": "Se dice cuando alguien critica en otro un defecto que él mismo tiene, o cuando el de menor autoridad pretende mandar al de mayor. La forma completa es: «el comal le dijo a la olla: mira qué tiznada estás».",
+		"tipo": "dicho"
+	},
+	{
+		"id": "el-muerto-y-el-arrimado-a-los-tres-dias-apestan",
+		"refran": "El muerto y el arrimado a los tres días apestan.",
+		"significado": "Las visitas o los huéspedes que se quedan demasiado tiempo terminan por incomodar; toda estancia prolongada acaba volviéndose una molestia.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "el-hombre-pone-dios-dispone-llega-el-diablo-y-todo-descompone",
+		"refran": "El hombre pone, Dios dispone, llega el diablo y todo descompone.",
+		"significado": "Por más que uno haga planes, no todo depende de su voluntad: intervienen el azar y los imprevistos que pueden echarlo todo a perder.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "el-que-nace-pa-tamal-del-cielo-le-caen-las-hojas",
+		"refran": "El que nace pa' tamal, del cielo le caen las hojas.",
+		"significado": "Quien tiene un destino o una vocación marcada encuentra que las circunstancias se acomodan para cumplirlo; lo que ha de ser, se da por sí solo.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "el-que-en-pan-piensa-hambre-tiene",
+		"refran": "El que en pan piensa, hambre tiene.",
+		"significado": "Cuando alguien insiste en pensar o hablar de algo, suele ser porque lo necesita o lo desea; los pensamientos delatan las carencias.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "el-que-con-lobos-anda-a-aullar-se-enseña",
+		"refran": "El que con lobos anda, a aullar se enseña.",
+		"significado": "Con el tiempo, la persona adopta las costumbres y la manera de ser del grupo con el que convive, para bien o para mal.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "el-que-es-perico-donde-quiera-es-verde",
+		"refran": "El que es perico, donde quiera es verde.",
+		"significado": "Quien tiene verdadero talento o capacidad lo demuestra en cualquier lugar y circunstancia; el que sirve, sirve donde sea.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "el-que-se-mueve-no-sale-en-la-foto",
+		"refran": "El que se mueve no sale en la foto.",
+		"significado": "Conviene mantenerse quieto y discreto en ciertos momentos, pues quien se inquieta o se exhibe de más puede quedar fuera del reparto o llamar la atención en su contra.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "el-que-tiene-tienda-que-la-atienda-y-si-no-que-la-venda",
+		"refran": "El que tiene tienda, que la atienda; y si no, que la venda.",
+		"significado": "Hay que hacerse cargo de las propias responsabilidades y atenderlas como es debido; si no se está dispuesto a ello, mejor dejarlas.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "el-pez-por-su-boca-muere",
+		"refran": "El pez por su boca muere.",
+		"significado": "Muchos problemas se los gana uno mismo por hablar de más; al igual que el pez cae por morder el anzuelo, la gente se delata o se mete en líos por lo que dice.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "el-que-a-dos-amos-sirve-con-uno-queda-mal",
+		"refran": "El que a dos amos sirve, con uno queda mal.",
+		"significado": "No se puede atender bien a dos personas o compromisos que exigen mucha dedicación; al final, con alguno se falla.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "el-burro-hablando-de-orejas",
+		"refran": "El burro hablando de orejas.",
+		"significado": "Se le dice a quien critica en otro un defecto que él mismo tiene de sobra; el burro, con sus orejas grandes, no es quién para burlarse de las ajenas.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "el-interes-tiene-pies",
+		"refran": "El interés tiene pies.",
+		"significado": "Cuando hay un provecho de por medio, la gente se mueve y acude con prontitud; la conveniencia hace que cualquiera camine.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "el-que-antes-se-moja-mas-tiempo-tiene-para-secarse",
+		"refran": "El que antes se moja, más tiempo tiene para secarse.",
+		"significado": "Quien comete sus errores y vive sus tropiezos de joven tiene más tiempo por delante para reponerse y aprender de ellos.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "en-boca-cerrada-no-entran-moscas",
+		"refran": "En boca cerrada no entran moscas.",
+		"significado": "A veces conviene guardar silencio: callar a tiempo evita problemas y errores que vienen de hablar de más.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "el-que-tiene-boca-se-equivoca",
+		"refran": "El que tiene boca se equivoca.",
+		"significado": "Todos cometemos errores al hablar; equivocarse es humano y nadie está libre de ello.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "el-que-mucho-abarca-poco-aprieta",
+		"refran": "El que mucho abarca, poco aprieta.",
+		"significado": "Quien quiere ocuparse de demasiadas cosas a la vez no logra hacer bien ninguna; conviene enfocarse en menos para desempeñarlas mejor.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "en-la-boca-del-mentiroso-lo-cierto-se-hace-dudoso",
+		"refran": "En la boca del mentiroso, lo cierto se hace dudoso.",
+		"significado": "A quien acostumbra mentir, ya no se le cree ni cuando dice la verdad; la mentira repetida termina por restarle credibilidad a todo lo que afirma.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "entre-mas-conozco-a-la-gente-mas-quiero-a-mi-perro",
+		"refran": "Entre más conozco a la gente, más quiero a mi perro.",
+		"significado": "Conforme se descubre cómo es realmente la gente, uno valora más la lealtad incondicional de un perro, que no traiciona ni decepciona.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "estas-trompuda-o-quieres-beso",
+		"refran": "¿Estás trompuda o quieres beso?",
+		"significado": "Se le dice en broma a quien está enojado o triste y frunce los labios, preguntándole con guasa si está molesto o si en realidad busca un beso.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "es-mejor-perder-el-tiempo-con-amigos-que-amigos-con-el-tiempo",
+		"refran": "Es mejor perder el tiempo con amigos, que amigos con el tiempo.",
+		"significado": "Vale más dedicar tiempo a los amigos, aunque parezca que se desperdicia, que descuidarlos y terminar perdiendo esas amistades con el paso de los años.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "en-la-noche-todos-los-gatos-son-pardos",
+		"refran": "En la noche todos los gatos son pardos.",
+		"significado": "En la oscuridad o la confusión, las diferencias se disimulan y todo parece igual; en ciertas circunstancias es difícil distinguir lo bueno de lo malo.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "en-tierra-de-ciegos-el-tuerto-es-rey",
+		"refran": "En tierra de ciegos, el tuerto es rey.",
+		"significado": "Donde todos saben poco o valen poco, basta con saber un poco más para destacar y mandar; la superioridad es relativa al entorno.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "en-el-pedir-esta-el-dar",
+		"refran": "En el pedir está el dar.",
+		"significado": "Quien pide debe hacerlo con mesura y razón, porque de la forma de pedir depende lo que esté dispuesto a conceder el otro. No conviene exigir de más.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "hay-maderas-que-nomas-no-agarran-el-barniz",
+		"refran": "Hay maderas que nomás no agarran el barniz.",
+		"significado": "Hay personas que, por más que se les enseñe o se les pula, no cambian ni aprenden; simplemente no toman lo que se les quiere dar.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "hijo-de-tigre-pintito",
+		"refran": "Hijo de tigre, pintito.",
+		"significado": "Los hijos heredan las cualidades o los defectos de sus padres, igual que el cachorro del tigre nace con sus mismas manchas.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "jarrito-nuevo-donde-te-pondre",
+		"refran": "Jarrito nuevo, ¿dónde te pondré?",
+		"significado": "Se dice con ironía de quien al estrenar algo nuevo lo cuida y lo presume en exceso, dándole una importancia desmedida que no durará mucho.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "la-madera-vieja-quema-mejor",
+		"refran": "La madera vieja quema mejor.",
+		"significado": "La experiencia y la madurez de los años dan mejores resultados; lo añejo y curtido por el tiempo suele tener más calidad y firmeza.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "la-verdad-no-peca-pero-incomoda",
+		"refran": "La verdad no peca, pero incomoda.",
+		"significado": "Decir la verdad no tiene nada de malo, pero muchas veces resulta molesta o difícil de aceptar para quien la escucha.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "mas-vale-malo-por-conocido-que-bueno-por-conocer",
+		"refran": "Más vale malo por conocido, que bueno por conocer.",
+		"significado": "A veces es preferible quedarse con algo o alguien que ya conocemos, aunque tenga defectos, que arriesgarnos con lo nuevo y desconocido, que podría resultar peor.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "mas-vale-que-aqui-digan-aqui-corrio-una-gallina-y-no-aqui-murio-un-gallo",
+		"refran": "Más vale que aquí digan «aquí corrió una gallina» y no «aquí murió un gallo».",
+		"significado": "Es preferible pasar por cobarde y conservar la vida, que arriesgarse temerariamente y morir por presumir de valiente.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "mas-vale-paso-que-dure-que-trote-que-canse",
+		"refran": "Más vale paso que dure, que trote que canse.",
+		"significado": "Conviene avanzar de forma constante y sostenida, aunque sea despacio, que arrancar con prisa y agotarse antes de llegar. La perseverancia vale más que el arranque.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "mas-sabe-el-diablo-por-viejo-que-por-diablo",
+		"refran": "Más sabe el diablo por viejo, que por diablo.",
+		"significado": "La sabiduría viene sobre todo de la experiencia y los años; las personas mayores saben más por lo vivido que por su sola astucia.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "mas-pronto-cae-un-hablador-que-un-cojo",
+		"refran": "Más pronto cae un hablador que un cojo.",
+		"significado": "Quien miente o habla de más termina contradiciéndose y siendo descubierto muy rápido; las mentiras tienen patas cortas.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "mas-hace-el-que-quiere-que-el-que-puede",
+		"refran": "Más hace el que quiere que el que puede.",
+		"significado": "La voluntad y las ganas logran más que los simples recursos o aptitudes; el empeño suele rendir más que la mera capacidad.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "mejor-solo-que-mal-acompañado",
+		"refran": "Mejor solo que mal acompañado.",
+		"significado": "Vale más estar solo que en compañía de quien hace daño o no aporta nada bueno; una mala compañía es peor que la soledad.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "mucho-ayuda-el-que-no-estorba",
+		"refran": "Mucho ayuda el que no estorba.",
+		"significado": "Quien no puede colaborar en algo presta una gran ayuda con sólo apartarse y no entorpecer el trabajo de los demás.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "nadie-sabe-lo-que-hay-en-una-olla-mas-que-la-cuchara-que-la-menea",
+		"refran": "Nadie sabe lo que hay en una olla más que la cuchara que la menea.",
+		"significado": "Sólo quien está totalmente involucrado en una situación conoce de verdad lo que sucede en ella; los de fuera no pueden saberlo.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "ni-muy-muy-ni-tan-tan",
+		"refran": "Ni muy muy, ni tan tan.",
+		"significado": "Hay que buscar el punto medio, sin excederse ni quedarse corto; ni de más ni de menos.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "no-hay-mal-que-dure-100-años-ni-cuerpo-que-lo-aguante",
+		"refran": "No hay mal que dure 100 años, ni cuerpo que lo aguante.",
+		"significado": "Ninguna desgracia o sufrimiento es eterno; tarde o temprano todo lo malo llega a su fin.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "no-por-mucho-madrugar-amanece-mas-temprano",
+		"refran": "No por mucho madrugar amanece más temprano.",
+		"significado": "Apresurarse no hace que las cosas sucedan antes de su tiempo; por más prisa que uno se dé, cada cosa llega a su momento.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "no-rebuzna-porque-no-da-el-tono",
+		"refran": "No rebuzna porque no da el tono.",
+		"significado": "Se le dice a una persona tan torpe o terca que reúne todas las cualidades de un burro y sólo le falta rebuznar.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "no-le-tengo-miedo-al-chile-aunque-lo-vea-colorado",
+		"refran": "No le tengo miedo al chile, aunque lo vea colorado.",
+		"significado": "Se dice cuando no se teme a algo a pesar de lo peligroso que aparenta ser; el color rojo del chile sugiere lo picante, pero no intimida al valiente.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "no-la-hagas-de-redentor-o-saldras-crucificado",
+		"refran": "No la hagas de redentor o saldrás crucificado.",
+		"significado": "Quien se mete a defender o a arreglar problemas ajenos suele terminar pagando los platos rotos; a veces el que ayuda sale perjudicado.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "no-le-eches-mucha-crema-a-tus-tacos",
+		"refran": "No le eches mucha crema a tus tacos.",
+		"significado": "Se le dice a quien exagera o presume de más; una invitación a no inflar tanto las cosas ni a darse tanta importancia.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "no-vengo-porque-puedo-sino-porque-puedo-vengo",
+		"refran": "No vengo porque puedo, sino porque puedo vengo.",
+		"significado": "Se dice con seguridad y cierto desafío para dejar claro que uno hace algo porque tiene la plena capacidad y el derecho de hacerlo.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "no-todos-los-que-chiflan-son-arrieros",
+		"refran": "No todos los que chiflan son arrieros.",
+		"significado": "No hay que creer que cualquiera es lo que aparenta; muchos fingen un oficio, una autoridad o una virtud que en realidad no tienen.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "para-un-niño-con-un-martillo-todo-es-un-clavo",
+		"refran": "Para un niño con un martillo, todo es un clavo.",
+		"significado": "Quien sólo domina una herramienta o una idea tiende a aplicarla a todo, aunque no sea la adecuada; un recurso único deforma la manera de ver los problemas.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "para-que-te-peinas-si-eres-chino",
+		"refran": "¿Para qué te peinas si eres chino?",
+		"significado": "No tiene sentido esforzarse en cambiar algo que es parte de nuestra naturaleza y no se puede modificar.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "perro-que-ladra-no-muerde",
+		"refran": "Perro que ladra no muerde.",
+		"significado": "Quien hace muchas amenazas y aspavientos rara vez los cumple; el que más grita o presume suele ser el menos peligroso.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "piensa-mal-y-acertaras",
+		"refran": "Piensa mal y acertarás.",
+		"significado": "Cuando hay motivo de sospecha, suponer lo peor de una situación o de alguien a menudo resulta acertado; aconseja desconfianza ante lo dudoso.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "quien-no-busco-amigos-en-la-alegria-en-la-desgracia-no-los-pida",
+		"refran": "Quien no buscó amigos en la alegría, en la desgracia no los pida.",
+		"significado": "Quien no cultivó amistades en los buenos tiempos no puede esperar contar con ellas cuando lleguen los malos; la amistad se siembra antes de necesitarla.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "se-junto-el-pan-con-las-ganas-de-comer",
+		"refran": "Se juntó el pan con las ganas de comer.",
+		"significado": "Se dice cuando coinciden a la perfección la oportunidad y el deseo de aprovecharla; justo lo que se quería con justo quien lo quería.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "se-hace-pesado-el-difunto-cuando-siente-que-lo-cargan",
+		"refran": "Se hace pesado el difunto cuando siente que lo cargan.",
+		"significado": "Hay quien, al ver que los demás lo ayudan o lo solapan, se aprovecha y se vuelve más exigente o flojo, cargando todo su peso en otros.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "si-el-rio-suena-es-porque-agua-lleva",
+		"refran": "Si el río suena, es porque agua lleva.",
+		"significado": "Cuando un rumor circula con insistencia, suele tener algo de verdad; los indicios no aparecen sin alguna causa real.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "si-ven-que-el-niño-es-risueño-y-todavia-le-hacen-cosquillas",
+		"refran": "Si ven que el niño es risueño, y todavía le hacen cosquillas.",
+		"significado": "Se dice cuando a alguien que ya es propenso a algo se le da todavía más motivo para excederse, alentando un comportamiento que conviene moderar.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "si-te-digo-que-la-burra-es-parda-es-porque-tengo-los-pelos-en-la-mano",
+		"refran": "Si te digo que la burra es parda, es porque tengo los pelos en la mano.",
+		"significado": "Se dice cuando no hay por qué dudar de lo afirmado, porque quien lo dice tiene pruebas firmes de lo que sostiene.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "si-quieres-conocer-a-ines-vive-con-ella-un-mes",
+		"refran": "Si quieres conocer a Inés, vive con ella un mes.",
+		"significado": "A una persona se le conoce de verdad con el trato cercano y cotidiano; la convivencia revela cómo es alguien mucho mejor que la primera impresión.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "soy-amo-de-lo-que-callas-y-esclavo-de-lo-que-dices",
+		"refran": "Soy amo de lo que callas y esclavo de lo que dices.",
+		"significado": "Mientras un secreto se guarda, uno tiene el control sobre él; en cuanto se cuenta, queda a merced de los demás. Por eso conviene medir lo que se dice.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "tanto-peca-el-que-mata-la-vaca-como-el-que-le-agarra-la-pata",
+		"refran": "Tanto peca el que mata la vaca, como el que le agarra la pata.",
+		"significado": "Tiene la misma culpa quien comete una falta que quien lo ayuda o lo encubre; todos los involucrados en un mal acto son responsables.",
+		"tipo": "refrán"
+	},
+	{
+		"id": "ve-burro-y-se-le-antoja-viaje",
+		"refran": "Ve burro y se le antoja viaje.",
+		"significado": "Se dice de quien, en cuanto ve la menor oportunidad, se aprovecha de ella o quiere sacarle provecho de inmediato.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "ya-no-quiero-queso-sino-salir-de-la-ratonera",
+		"refran": "Ya no quiero queso, sino salir de la ratonera.",
+		"significado": "Se dice cuando ya no interesa el beneficio que ofrecía una situación, sino simplemente librarse de ella y salir del aprieto.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "ya-comi-ya-bebi-ya-no-me-hallo-aqui",
+		"refran": "Ya comí, ya bebí, ya no me hallo aquí.",
+		"significado": "Se dice cuando ya se hizo todo lo que había que hacer en un lugar y por lo tanto ya no tiene sentido seguir ahí.",
+		"tipo": "dicho"
+	},
+	{
+		"id": "zapatero-a-tus-zapatos",
+		"refran": "Zapatero a tus zapatos.",
+		"significado": "Cada quien debe ocuparse de lo suyo y de aquello que domina, sin meterse a opinar o intervenir en asuntos que no le competen.",
+		"tipo": "dicho"
+	}
+]

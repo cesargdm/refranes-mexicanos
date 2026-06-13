@@ -1,0 +1,15 @@
+{
+	"name": "@refranes/data",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"main": "index.ts",
+	"types": "index.ts",
+	"exports": {
+		".": "./index.ts",
+		"./refranes.json": "./refranes.json"
+	},
+	"scripts": {
+		"check": "bun ../../node_modules/typescript/bin/tsc --noEmit -p tsconfig.json && bun validate.ts"
+	}
+}
