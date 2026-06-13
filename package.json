@@ -1,0 +1,8 @@
+{
+	"name": "refranes-mexicanos",
+	"private": true,
+	"workspaces": ["apps/*", "packages/*"],
+	"scripts": {
+		"check": "bun packages/data/validate.ts && bun run --filter '*' check"
+	}
+}
