@@ -8,7 +8,7 @@ const FRINGE = 0.13
  * zigzag (picado) fringe along the bottom edge.
  */
 export function buildFlagSilhouette(w: number, h: number): SkPath {
-  const p = Skia.Path.Make()
+  const p = Skia.PathBuilder.Make()
   const notch = h * FRINGE
   const teeth = 6
   const tw = w / teeth
@@ -23,7 +23,7 @@ export function buildFlagSilhouette(w: number, h: number): SkPath {
     p.lineTo(valley, h - notch)
   }
   p.close()
-  return p
+  return p.build()
 }
 
 /**
@@ -32,39 +32,38 @@ export function buildFlagSilhouette(w: number, h: number): SkPath {
  * with blendMode="clear" inside a layer Group so the background shows through.
  */
 export function buildCutouts(w: number, h: number): SkPath {
-  const p = Skia.Path.Make()
-  const cx = w / 2
-  const cy = h * 0.46
-  const d = Math.min(w, h) * 0.17
+  // The decoration lives in a top band and a bottom band; the center is left
+  // clear so the saying stays legible over the paper.
+  const p = Skia.PathBuilder.Make()
+  const unit = Math.min(w, h)
+  const r = unit * 0.032
+  const d = unit * 0.05
 
-  // Central diamond
-  p.moveTo(cx, cy - d)
-  p.lineTo(cx + d, cy)
-  p.lineTo(cx, cy + d)
-  p.lineTo(cx - d, cy)
-  p.close()
-
-  // Flanking circles
-  const r = d * 0.4
-  p.addCircle(cx - d * 2.05, cy, r)
-  p.addCircle(cx + d * 2.05, cy, r)
-
-  // Dot row near the top
+  // Top header: a row of dots with small diamonds tucked between them.
   const dots = 5
   for (let i = 0; i < dots; i++) {
     const x = (w / (dots + 1)) * (i + 1)
-    p.addCircle(x, h * 0.18, r * 0.5)
+    p.addCircle(x, h * 0.13, r)
+  }
+  for (let i = 0; i < dots - 1; i++) {
+    const x = (w / (dots + 1)) * (i + 1.5)
+    const y = h * 0.13
+    p.moveTo(x, y - d)
+    p.lineTo(x + d, y)
+    p.lineTo(x, y + d)
+    p.lineTo(x - d, y)
+    p.close()
   }
 
-  // Scallop holes sitting just above each fringe valley
+  // Bottom band: scallop holes sitting just above each fringe valley.
   const teeth = 6
   const tw = w / teeth
   for (let i = 0; i < teeth; i++) {
     const x = (i + 0.5) * tw
-    p.addCircle(x, h * (1 - FRINGE) - r * 0.6, r * 0.42)
+    p.addCircle(x, h * (1 - FRINGE) - r * 1.4, r * 0.7)
   }
 
-  return p
+  return p.build()
 }
 
 export type ShredSpec = {

@@ -159,6 +159,9 @@ export function BannerStage({ deck }: Props) {
 
   const accent = flagPalette[0]
 
+  const refranLength = deck.current.refran.length
+  const refranFontSize = refranLength > 78 ? 17 : refranLength > 48 ? 19 : 22
+
   return (
     <View style={styles.root}>
       <TearShreds
@@ -181,7 +184,13 @@ export function BannerStage({ deck }: Props) {
             <View
               style={[
                 styles.textOverlay,
-                { width: flagW, height: flagH, top: FLAG_PAD, left: FLAG_PAD },
+                {
+                  width: flagW,
+                  height: flagH,
+                  top: FLAG_PAD,
+                  left: FLAG_PAD,
+                  paddingBottom: flagH * 0.16,
+                },
               ]}
               pointerEvents="none"
             >
@@ -189,7 +198,13 @@ export function BannerStage({ deck }: Props) {
                 text={deck.current.refran}
                 triggerKey={deck.step}
                 reducedMotion={reduced}
-                style={styles.refranText}
+                style={[
+                  styles.refranText,
+                  {
+                    fontSize: refranFontSize,
+                    lineHeight: refranFontSize * 1.27,
+                  },
+                ]}
               />
             </View>
           </Animated.View>

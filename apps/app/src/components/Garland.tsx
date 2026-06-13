@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { Canvas, Group, Path, Skia } from '@shopify/react-native-skia'
+import { Canvas, Group, Path, Skia, type SkPath } from '@shopify/react-native-skia'
 
 import { flagPalette } from '@/theme/unistyles'
 
@@ -17,12 +17,11 @@ const FLAGS = 9
 export function Garland({ width }: Props) {
   const { string, flags } = useMemo(() => {
     const dip = 16
-    const string = Skia.Path.Make()
+    const string = Skia.PathBuilder.Make()
     string.moveTo(0, 6)
     string.quadTo(width / 2, 6 + dip, width, 6)
 
-    const flags: { path: ReturnType<typeof Skia.Path.Make>; color: string }[] =
-      []
+    const flags: { path: SkPath; color: string }[] = []
     const span = width / FLAGS
     const fw = span * 0.66
     const fh = 24
@@ -31,14 +30,14 @@ export function Garland({ width }: Props) {
       // y on the quadratic string at cx
       const t = cx / width
       const top = 6 + dip * (1 - (2 * t - 1) * (2 * t - 1))
-      const p = Skia.Path.Make()
+      const p = Skia.PathBuilder.Make()
       p.moveTo(cx - fw / 2, top)
       p.lineTo(cx + fw / 2, top)
       p.lineTo(cx, top + fh)
       p.close()
-      flags.push({ path: p, color: flagPalette[i % flagPalette.length]! })
+      flags.push({ path: p.build(), color: flagPalette[i % flagPalette.length]! })
     }
-    return { string, flags }
+    return { string: string.build(), flags }
   }, [width])
 
   return (

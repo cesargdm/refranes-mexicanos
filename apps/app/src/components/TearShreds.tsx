@@ -19,7 +19,7 @@ type ShredProps = {
 
 function Shred({ spec, progress, centerX, centerY, flagW, flagH }: ShredProps) {
   const path = useMemo(() => {
-    const p = Skia.Path.Make()
+    const p = Skia.PathBuilder.Make()
     const s = spec.size
     if (spec.diamond) {
       p.moveTo(0, -s / 2)
@@ -30,7 +30,7 @@ function Shred({ spec, progress, centerX, centerY, flagW, flagH }: ShredProps) {
     } else {
       p.addRect(Skia.XYWHRect(-s / 2, -s / 2, s, s))
     }
-    return p
+    return p.build()
   }, [spec])
 
   const baseX = centerX + (spec.startX - 0.5) * flagW
