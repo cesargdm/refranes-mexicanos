@@ -1,9 +1,12 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "react-router-app",
+  "name": "refranes-cesargdm",
   "compatibility_date": "2025-04-04",
   "main": "./workers/app.ts",
-  "vars": {
-    "VALUE_FROM_CLOUDFLARE": "Hello from Cloudflare",
-  },
+  "routes": [
+    {
+      "pattern": "refranes.cesargdm.com",
+      "custom_domain": true,
+    },
+  ],
 }

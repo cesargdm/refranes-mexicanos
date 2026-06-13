@@ -10,6 +10,6 @@
 		"./refranes.json": "./refranes.json"
 	},
 	"scripts": {
-		"check": "bun ../../node_modules/typescript/bin/tsc --noEmit -p tsconfig.json && bun validate.ts"
+		"check": "bun validate.ts"
 	}
 }

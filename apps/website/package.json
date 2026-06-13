@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "@refranes/website",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,9 +9,11 @@
     "dev": "react-router dev",
     "postinstall": "wrangler types",
     "preview": "react-router build && vite preview",
+    "check": "react-router typegen && tsc -b",
     "typecheck": "wrangler types && react-router typegen && tsc -b"
   },
   "dependencies": {
+    "@refranes/data": "workspace:*",
     "isbot": "^5.1.36",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
