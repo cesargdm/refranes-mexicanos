@@ -1,79 +1,26 @@
-# Welcome to React Router!
+# Refranes Mexicanos — website
 
-A modern, production-ready template for building full-stack React applications using React Router.
+[refranes.cesargdm.com](https://refranes.cesargdm.com): React Router v7 on
+Cloudflare Workers (Worker `refranes-cesargdm`). The Worker in
+`workers/app.ts` also serves the public dataset at `/refranes.json` with open
+CORS; the data is bundled from `@refranes/data` at build time, so data changes
+go live only after a deploy.
 
-## Features
+## Develop
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
+From the repo root:
 
 ```bash
-npm install
+bun install
+bun run --cwd apps/website dev      # http://localhost:5173
+bun run --cwd apps/website check    # route typegen + typecheck
 ```
 
-### Development
+## Deploy
 
-Start the development server with HMR:
+Deploys are manual; nothing deploys on merge.
 
 ```bash
-npm run dev
+(cd apps/website && bun run build && bunx wrangler deploy --dry-run)   # verify
+bun run --cwd apps/website deploy                                      # ship
 ```
-
-Your application will be available at `http://localhost:5173`.
-
-## Previewing the Production Build
-
-Preview the production build locally:
-
-```bash
-npm run preview
-```
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-Deployment is done using the Wrangler CLI.
-
-To build and deploy directly to production:
-
-```sh
-npm run deploy
-```
-
-To deploy a preview URL:
-
-```sh
-npx wrangler versions upload
-```
-
-You can then promote a version to production after verification or roll it out progressively.
-
-```sh
-npx wrangler versions deploy
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
