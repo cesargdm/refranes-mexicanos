@@ -2,6 +2,7 @@
 	"name": "refranes-mexicanos",
 	"private": true,
 	"workspaces": ["apps/*", "packages/*"],
+	"trustedDependencies": ["@shopify/react-native-skia", "esbuild", "sharp", "workerd"],
 	"scripts": {
 		"check": "bun packages/data/validate.ts && bun run --filter '*' check"
 	}

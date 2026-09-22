@@ -12,4 +12,4 @@ IMPORTANT: Expo has changed. Read the versioned docs at https://docs.expo.dev/ve
 
 - `babel-preset-expo` must stay an explicit devDependency; bun doesn't place it where Babel looks, and Metro fails with "Cannot find module 'babel-preset-expo'".
 - `metro.config.js` needs `watchFolders = [workspaceRoot]` plus both `nodeModulesPaths`. Do not set `disableHierarchicalLookup`; it breaks the transformer under bun's store.
-- bun skips Skia's postinstall, so pod install fails with "Skia prebuilt binaries not found". Fix after `bun install`: `node node_modules/@shopify/react-native-skia/scripts/install-libs.js` (from `apps/app`).
+- Skia's postinstall copies its prebuilt binaries into `libs/`; it only runs because `@shopify/react-native-skia` is in the root `trustedDependencies` (bun blocks lifecycle scripts otherwise). That list replaces bun's default allowlist, so keep `esbuild`, `sharp` and `workerd` in it. If pod install fails with "Skia prebuilt binaries not found" in an older checkout, run `bun install --force` once.

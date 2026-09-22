@@ -10,7 +10,7 @@ Bun-workspaces monorepo (`bun.lock`; use `bun`, never npm/yarn/pnpm). Default br
 
 ```bash
 bun install
-bun run check                          # validate data + typecheck every workspace; the only gate (no CI, no tests, no lint config)
+bun run check                          # validate data + typecheck every workspace; the only gate, run by CI on PRs and master (no tests, no lint config)
 bun packages/data/validate.ts          # data only
 bun run --filter @refranes/website check   # one workspace
 
