@@ -1,6 +1,6 @@
 # Refranes Mexicanos
 
-A collection of Mexican sayings (*refranes* and *dichos*), each with its
+A collection of Mexican sayings (_refranes_ and _dichos_), each with its
 meaning. A React Native app and a public website, sharing one canonical
 dataset.
 
@@ -22,10 +22,10 @@ Served with open CORS. Each entry:
 
 ```json
 {
-  "id": "camaron-que-se-duerme-se-lo-lleva-la-corriente",
-  "refran": "Camarón que se duerme, se lo lleva la corriente.",
-  "significado": "Quien se descuida deja pasar las oportunidades…",
-  "tipo": "refrán"
+	"id": "camaron-que-se-duerme-se-lo-lleva-la-corriente",
+	"refran": "Camarón que se duerme, se lo lleva la corriente.",
+	"significado": "Quien se descuida deja pasar las oportunidades…",
+	"tipo": "refrán"
 }
 ```
 

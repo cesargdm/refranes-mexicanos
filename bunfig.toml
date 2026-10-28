@@ -1,0 +1,9 @@
+[fmt]
+useTabs = true
+semi = false
+singleQuote = true
+ignorePatterns = [".claude/**", ".agents/**", ".codex/**"]
+
+[[fmt.overrides]]
+files = ["apps/**"]
+options = { useTabs = false }

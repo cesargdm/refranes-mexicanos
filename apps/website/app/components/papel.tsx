@@ -1,32 +1,32 @@
 export const FLAG_COLORS = [
-  "#eb00af",
-  "#1fa6a6",
-  "#f5b722",
-  "#7a3bd7",
-  "#e8453c",
-];
+  '#eb00af',
+  '#1fa6a6',
+  '#f5b722',
+  '#7a3bd7',
+  '#e8453c',
+]
 
-const PAPER = "#fff7f0";
+const PAPER = '#fff7f0'
 
 function silhouettePath(w: number, h: number): string {
-  const notch = h * 0.13;
-  const teeth = 6;
-  const tw = w / teeth;
-  let d = `M0 0 L${w} 0 L${w} ${h - notch}`;
+  const notch = h * 0.13
+  const teeth = 6
+  const tw = w / teeth
+  let d = `M0 0 L${w} 0 L${w} ${h - notch}`
   for (let i = 0; i < teeth; i++) {
-    const point = w - (i + 0.5) * tw;
-    const valley = w - (i + 1) * tw;
-    d += ` L${point} ${h} L${valley} ${h - notch}`;
+    const point = w - (i + 0.5) * tw
+    const valley = w - (i + 1) * tw
+    d += ` L${point} ${h} L${valley} ${h - notch}`
   }
-  return d + " Z";
+  return d + ' Z'
 }
 
 type FlagProps = {
-  color: string;
-  width?: number;
-  height?: number;
-  className?: string;
-};
+  color: string
+  width?: number
+  height?: number
+  className?: string
+}
 
 /** An SVG papel picado flag with a zigzag fringe and punched decoration. */
 export function PapelFlag({
@@ -35,28 +35,28 @@ export function PapelFlag({
   height = 168,
   className,
 }: FlagProps) {
-  const w = 200;
-  const h = 168;
-  const unit = Math.min(w, h);
-  const r = unit * 0.032;
-  const d = unit * 0.05;
+  const w = 200
+  const h = 168
+  const unit = Math.min(w, h)
+  const r = unit * 0.032
+  const d = unit * 0.05
 
-  const dots = 5;
+  const dots = 5
   const topDots = Array.from({ length: dots }, (_, i) => ({
     x: (w / (dots + 1)) * (i + 1),
     y: h * 0.13,
-  }));
+  }))
   const topDiamonds = Array.from({ length: dots - 1 }, (_, i) => {
-    const x = (w / (dots + 1)) * (i + 1.5);
-    const y = h * 0.13;
-    return `${x},${y - d} ${x + d},${y} ${x},${y + d} ${x - d},${y}`;
-  });
-  const teeth = 6;
-  const tw = w / teeth;
+    const x = (w / (dots + 1)) * (i + 1.5)
+    const y = h * 0.13
+    return `${x},${y - d} ${x + d},${y} ${x},${y + d} ${x - d},${y}`
+  })
+  const teeth = 6
+  const tw = w / teeth
   const bottomDots = Array.from({ length: teeth }, (_, i) => ({
     x: (i + 0.5) * tw,
     y: h * 0.87 - r * 1.4,
-  }));
+  }))
 
   return (
     <svg
@@ -77,12 +77,12 @@ export function PapelFlag({
         <circle key={`bd${i}`} cx={p.x} cy={p.y} r={r * 0.7} fill={PAPER} />
       ))}
     </svg>
-  );
+  )
 }
 
 type GarlandProps = {
-  count?: number;
-};
+  count?: number
+}
 
 /** A swaying string of mini papel picado flags. */
 export function Garland({ count = 12 }: GarlandProps) {
@@ -105,5 +105,5 @@ export function Garland({ count = 12 }: GarlandProps) {
         ))}
       </ul>
     </div>
-  );
+  )
 }

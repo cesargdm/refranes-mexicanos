@@ -19,7 +19,9 @@ export function RefranRow({ refran }: Props) {
   return (
     <Pressable
       style={styles.row}
-      onPress={() => router.navigate({ pathname: '/', params: { id: refran.id } })}
+      onPress={() =>
+        router.navigate({ pathname: '/', params: { id: refran.id } })
+      }
     >
       <View style={styles.body}>
         <Text style={styles.refran} numberOfLines={2}>

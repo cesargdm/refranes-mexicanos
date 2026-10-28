@@ -32,11 +32,7 @@ export default function FavoritosScreen() {
         contentInsetAdjustmentBehavior="automatic"
         ListEmptyComponent={
           <View style={styles.empty}>
-            <SymbolView
-              name="star"
-              tintColor={flagPalette[0]}
-              size={40}
-            />
+            <SymbolView name="star" tintColor={flagPalette[0]} size={40} />
             <Text style={styles.emptyTitle}>Aún no tienes favoritos</Text>
             <Text style={styles.emptyBody}>
               Toca la estrella en cualquier refrán para guardarlo aquí.

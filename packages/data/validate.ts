@@ -40,7 +40,9 @@ for (const [i, entry] of (refranes as unknown[]).entries()) {
 		errors.push(`${where} (${String(id)}): leftover TERMINAR marker`)
 	}
 	if (typeof tipo !== 'string' || !TIPOS.has(tipo)) {
-		errors.push(`${where} (${String(id)}): invalid tipo ${JSON.stringify(tipo)}`)
+		errors.push(
+			`${where} (${String(id)}): invalid tipo ${JSON.stringify(tipo)}`,
+		)
 	}
 }
 

@@ -211,9 +211,7 @@ export function BannerStage({ deck }: Props) {
         </View>
       </GestureDetector>
 
-      <View
-        style={[styles.controls, { paddingBottom: insets.bottom + 100 }]}
-      >
+      <View style={[styles.controls, { paddingBottom: insets.bottom + 100 }]}>
         {open ? (
           <MeaningScroll
             meaning={deck.current.significado}

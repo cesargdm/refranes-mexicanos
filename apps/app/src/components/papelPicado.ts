@@ -81,7 +81,10 @@ export type ShredSpec = {
  * Deterministic burst of paper shreds for the tear animation. Seeded by index
  * so it is stable across renders without Math.random in the render path.
  */
-export function buildShreds(count: number, colors: readonly string[]): ShredSpec[] {
+export function buildShreds(
+  count: number,
+  colors: readonly string[],
+): ShredSpec[] {
   const shreds: ShredSpec[] = []
   for (let i = 0; i < count; i++) {
     // Cheap deterministic pseudo-randomness from the index.

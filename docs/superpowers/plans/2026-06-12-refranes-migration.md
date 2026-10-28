@@ -15,6 +15,7 @@
 ### Task 1: Monorepo scaffold + Swift removal
 
 **Files:**
+
 - Create: `package.json` (root), `.gitignore` (replace), `tsconfig.base.json`
 - Delete: all Swift/Xcode artifacts (`refranesMexicanos*/`, `*.swift`, `MoreRefranesViewController.swift`)
 
@@ -26,12 +27,18 @@
 ### Task 2: `packages/data` — completed dictionary
 
 **Files:**
+
 - Create: `packages/data/package.json`, `packages/data/refranes.json`, `packages/data/index.ts`, `packages/data/validate.ts`, `packages/data/tsconfig.json`
 
 - [ ] **Step 1: Author `refranes.json`.** Convert every entry from the Swift source. Editorial rules (from spec): write the ~40 missing `significado` (marked TERMINAR in source), fix typos/accents (`haz de beber`→`has de beber`, `fracazando`→`fracasando`, `caé`→`cae`, `alenta`→`alentá/se alenta→se hace lento (rewrite)`, `escenciales`→`esenciales`, `desemepeñará`→`desempeñará`, `creé`→`cree`, `hacerce`→`hacerse`, etc. — full prose pass on every meaning), normalize `tipo` to lowercase `refrán|dicho`. Entry shape:
 
 ```json
-{ "id": "a-falta-de-pan-tortillas", "refran": "A falta de pan, tortillas.", "significado": "…", "tipo": "dicho" }
+{
+	"id": "a-falta-de-pan-tortillas",
+	"refran": "A falta de pan, tortillas.",
+	"significado": "…",
+	"tipo": "dicho"
+}
 ```
 
 ids: lowercase, accents stripped, punctuation dropped, hyphen-separated.
@@ -58,6 +65,7 @@ export const refranes = refranesJson as Refran[]
 ### Task 3: `apps/app` — Expo scaffold + theme
 
 **Files:**
+
 - Create: `apps/app/` via `bunx create-expo-app@latest app --template blank-typescript` (then move), `apps/app/app.json`, `apps/app/unistyles.ts`, Expo Router structure `apps/app/app/_layout.tsx`, `apps/app/app/(tabs)/_layout.tsx`
 
 - [ ] **Step 1: Scaffold** in `apps/`, add deps: `expo-router react-native-unistyles react-native-reanimated react-native-gesture-handler @shopify/react-native-skia react-native-mmkv expo-haptics react-native-safe-area-context react-native-screens react-native-edge-to-edge react-native-nitro-modules expo-symbols`. `packages/data` consumed via workspace dep `"@refranes/data": "workspace:*"`.
@@ -66,8 +74,12 @@ export const refranes = refranesJson as Refran[]
 ```ts
 const theme = {
 	colors: {
-		magenta: '#EB00AF', teal: '#52B2B2', gold: '#F5C242',
-		violet: '#7A3BD7', ink: '#241B2F', paper: '#FFF9F2',
+		magenta: '#EB00AF',
+		teal: '#52B2B2',
+		gold: '#F5C242',
+		violet: '#7A3BD7',
+		ink: '#241B2F',
+		paper: '#FFF9F2',
 		flagInk: '#FFFFFF',
 	},
 	flagPalette: ['#EB00AF', '#52B2B2', '#F5C242', '#7A3BD7', '#E8453C'],
@@ -83,10 +95,12 @@ const theme = {
 ### Task 4: Papel picado banner screen
 
 **Files:**
+
 - Create: `apps/app/components/PapelPicadoFlag.tsx` (Skia flag with cut-out border motifs), `apps/app/components/BannerString.tsx` (rope curve + sway), `apps/app/components/CascadeText.tsx` (word-by-word spring entrance), `apps/app/components/TearShreds.tsx` (tear particles), `apps/app/components/MeaningScroll.tsx` (pull-tab unroll), `apps/app/hooks/useRefranDeck.ts` (shuffled order, current index, next/prev)
 - Modify: `apps/app/app/(tabs)/index.tsx`
 
 Behavior contract (from spec):
+
 - Idle sway ±2° pendulum (Reanimated `withRepeat` sine); pauses while meaning open. Respect `useReducedMotion` → crossfade everywhere.
 - New refrán: flag pulled across on the string (translateX spring with overshoot), words cascade in (per-word opacity+translateY springs, 40ms stagger).
 - Swipe left/right (Gesture Handler Pan): current flag tears — 8–12 shreds (precomputed Skia paths slicing the flag rect) fall with randomized rotation/gravity, fade out; haptic `impactAsync(Medium)` on tear.
@@ -102,6 +116,7 @@ Behavior contract (from spec):
 ### Task 5: Favorites store + Browse/Search + Share
 
 **Files:**
+
 - Create: `apps/app/state/favorites.ts` (MMKV-backed), `apps/app/components/RefranRow.tsx`
 - Modify: `apps/app/app/(tabs)/buscar.tsx`, `apps/app/app/(tabs)/favoritos.tsx`, banner screen (star wiring)
 
@@ -114,6 +129,7 @@ Behavior contract (from spec):
 ### Task 6: `apps/website` — React Router v7 on CF Workers
 
 **Files:**
+
 - Create: `apps/website/` via `bunx create-react-router@latest` Cloudflare template, `apps/website/app/routes/home.tsx`, `apps/website/app/styles/*.css.ts` (Vanilla Extract), `apps/website/public/refranes.json` (build step copies from `packages/data`), `apps/website/wrangler.jsonc`
 
 Sections (from spec): hero with CSS papel picado banners + animated featured refrán (CSS keyframe sway + word cascade), searchable list (client-side over bundled data), "Descarga el diccionario" with schema docs + MIT note. `/refranes.json` static asset with `Access-Control-Allow-Origin: *` (assets config or explicit headers).
@@ -124,7 +140,7 @@ Sections (from spec): hero with CSS papel picado banners + animated featured ref
 - [ ] **Step 4: `wrangler.jsonc`:** name `refranes-cesargdm`, routes `[{ "pattern": "refranes.cesargdm.com", "custom_domain": true }]`.
 - [ ] **Step 5: `bun run build` + local check, commit** `feat(website): landing + public refranes.json`.
 
-*May be delegated to an Opus subagent in parallel with Tasks 4–5 once Task 2 lands.*
+_May be delegated to an Opus subagent in parallel with Tasks 4–5 once Task 2 lands._
 
 ### Task 7: Ship
 

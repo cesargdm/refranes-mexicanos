@@ -1,5 +1,11 @@
 import { useMemo } from 'react'
-import { Canvas, Group, Path, Skia, type SkPath } from '@shopify/react-native-skia'
+import {
+  Canvas,
+  Group,
+  Path,
+  Skia,
+  type SkPath,
+} from '@shopify/react-native-skia'
 
 import { flagPalette } from '@/theme/unistyles'
 
@@ -35,7 +41,10 @@ export function Garland({ width }: Props) {
       p.lineTo(cx + fw / 2, top)
       p.lineTo(cx, top + fh)
       p.close()
-      flags.push({ path: p.build(), color: flagPalette[i % flagPalette.length]! })
+      flags.push({
+        path: p.build(),
+        color: flagPalette[i % flagPalette.length]!,
+      })
     }
     return { string: string.build(), flags }
   }, [width])
