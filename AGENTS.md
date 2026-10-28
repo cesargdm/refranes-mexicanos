@@ -10,7 +10,7 @@ Bun-workspaces monorepo (`bun.lock`; use `bun`, never npm/yarn/pnpm). Default br
 
 ```bash
 bun install
-bun run check                          # validate data + typecheck every workspace; the only gate, run by CI on PRs and master (no tests, no lint config)
+bun run check                          # format check + validate data + typecheck every workspace; run by CI on PRs and master
 bun packages/data/validate.ts          # data only
 bun run --filter @refranes/website check   # one workspace
 
@@ -29,4 +29,4 @@ Deploys are manual (`bun run --cwd apps/website deploy` → Worker `refranes-ces
 
 ## Style
 
-No formatter is configured; match the file. `packages/data` and the root `package.json` use tabs; the apps use 2 spaces. TypeScript, single quotes, no semicolons.
+Run `bun run format` / `bun run format:check` (Bun 1.4.4; settings in `bunfig.toml`). `packages/data` and the root `package.json` use tabs; the apps use 2 spaces. TypeScript, single quotes, no semicolons.

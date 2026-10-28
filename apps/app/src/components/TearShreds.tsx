@@ -73,7 +73,13 @@ type Props = {
  * Full-screen Skia overlay that bursts paper shreds outward from the flag when
  * `progress` animates 0 → 1, then hides again at rest.
  */
-export function TearShreds({ progress, centerX, centerY, flagW, flagH }: Props) {
+export function TearShreds({
+  progress,
+  centerX,
+  centerY,
+  flagW,
+  flagH,
+}: Props) {
   const shreds = useMemo(() => buildShreds(SHRED_COUNT, flagPalette), [])
   return (
     <Canvas style={StyleSheet.absoluteFill} pointerEvents="none">

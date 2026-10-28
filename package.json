@@ -1,9 +1,20 @@
 {
 	"name": "refranes-mexicanos",
 	"private": true,
-	"workspaces": ["apps/*", "packages/*"],
-	"trustedDependencies": ["@shopify/react-native-skia", "esbuild", "sharp", "workerd"],
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"trustedDependencies": [
+		"@shopify/react-native-skia",
+		"esbuild",
+		"sharp",
+		"workerd"
+	],
 	"scripts": {
-		"check": "bun packages/data/validate.ts && bun run --filter '*' check"
-	}
+		"check": "bun run format:check && bun packages/data/validate.ts && bun run --filter '*' check",
+		"format": "bun fmt .",
+		"format:check": "bun fmt --check ."
+	},
+	"packageManager": "bun@1.4.4"
 }

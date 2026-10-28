@@ -1,55 +1,53 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState } from 'react'
 
-import { refranes, type RefranTipo } from "@refranes/data";
-import type { Route } from "./+types/home";
-import { FLAG_COLORS, Garland, PapelFlag } from "../components/papel";
+import { refranes, type RefranTipo } from '@refranes/data'
+import type { Route } from './+types/home'
+import { FLAG_COLORS, Garland, PapelFlag } from '../components/papel'
 
 export function meta(_: Route.MetaArgs) {
   return [
-    { title: "Refranes Mexicanos — Diccionario público" },
+    { title: 'Refranes Mexicanos — Diccionario público' },
     {
-      name: "description",
+      name: 'description',
       content:
-        "Colección de refranes y dichos mexicanos con su significado. Descarga gratis el diccionario completo en formato JSON.",
+        'Colección de refranes y dichos mexicanos con su significado. Descarga gratis el diccionario completo en formato JSON.',
     },
-  ];
+  ]
 }
 
-const FEATURED_ID = "camaron-que-se-duerme-se-lo-lleva-la-corriente";
+const FEATURED_ID = 'camaron-que-se-duerme-se-lo-lleva-la-corriente'
 
 function normalize(input: string): string {
   return input
     .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
 }
 
-type Filter = "todos" | RefranTipo;
+type Filter = 'todos' | RefranTipo
 
 const FILTERS: { key: Filter; label: string }[] = [
-  { key: "todos", label: "Todos" },
-  { key: "refrán", label: "Refranes" },
-  { key: "dicho", label: "Dichos" },
-];
+  { key: 'todos', label: 'Todos' },
+  { key: 'refrán', label: 'Refranes' },
+  { key: 'dicho', label: 'Dichos' },
+]
 
 export default function Home() {
-  const featured =
-    refranes.find((r) => r.id === FEATURED_ID) ?? refranes[0]!;
+  const featured = refranes.find((r) => r.id === FEATURED_ID) ?? refranes[0]!
 
-  const [query, setQuery] = useState("");
-  const [filter, setFilter] = useState<Filter>("todos");
+  const [query, setQuery] = useState('')
+  const [filter, setFilter] = useState<Filter>('todos')
 
   const results = useMemo(() => {
-    const q = normalize(query.trim());
+    const q = normalize(query.trim())
     return refranes.filter((r) => {
-      if (filter !== "todos" && r.tipo !== filter) return false;
-      if (!q) return true;
+      if (filter !== 'todos' && r.tipo !== filter) return false
+      if (!q) return true
       return (
-        normalize(r.refran).includes(q) ||
-        normalize(r.significado).includes(q)
-      );
-    });
-  }, [query, filter]);
+        normalize(r.refran).includes(q) || normalize(r.significado).includes(q)
+      )
+    })
+  }, [query, filter])
 
   return (
     <main className="min-h-screen">
@@ -105,29 +103,28 @@ export default function Home() {
           />
           <div className="mt-3 flex gap-2">
             {FILTERS.map((f) => {
-              const active = filter === f.key;
+              const active = filter === f.key
               return (
                 <button
                   key={f.key}
                   type="button"
                   onClick={() => setFilter(f.key)}
                   className={
-                    "rounded-full px-4 py-2 text-sm font-bold transition " +
+                    'rounded-full px-4 py-2 text-sm font-bold transition ' +
                     (active
-                      ? "bg-magenta text-white"
-                      : "bg-white text-ink-soft hover:bg-paper-deep")
+                      ? 'bg-magenta text-white'
+                      : 'bg-white text-ink-soft hover:bg-paper-deep')
                   }
                 >
                   {f.label}
                 </button>
-              );
+              )
             })}
           </div>
         </div>
 
         <p className="mt-4 text-sm text-ink-soft">
-          {results.length}{" "}
-          {results.length === 1 ? "resultado" : "resultados"}
+          {results.length} {results.length === 1 ? 'resultado' : 'resultados'}
         </p>
 
         <ul className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -157,10 +154,7 @@ export default function Home() {
       </section>
 
       {/* Download */}
-      <section
-        id="descargar"
-        className="bg-ink px-6 py-20 text-paper"
-      >
+      <section id="descargar" className="bg-ink px-6 py-20 text-paper">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-4xl font-black">
             Descarga el diccionario
@@ -192,14 +186,11 @@ export default function Home() {
 ]`}</code>
             </pre>
             <p className="mt-4 text-sm text-paper/60">
-              <code className="text-paper/90">tipo</code> es{" "}
-              <code className="text-paper/90">"refrán"</code> o{" "}
+              <code className="text-paper/90">tipo</code> es{' '}
+              <code className="text-paper/90">"refrán"</code> o{' '}
               <code className="text-paper/90">"dicho"</code>. Endpoint público
-              con CORS abierto en{" "}
-              <a
-                className="underline"
-                href="/refranes.json"
-              >
+              con CORS abierto en{' '}
+              <a className="underline" href="/refranes.json">
                 /refranes.json
               </a>
               .
@@ -210,7 +201,7 @@ export default function Home() {
 
       <footer className="bg-ink px-6 pb-12 text-center text-sm text-paper/50">
         <p>
-          Hecho con cariño por{" "}
+          Hecho con cariño por{' '}
           <a className="underline" href="https://cesargdm.com">
             César Guadarrama
           </a>
@@ -218,5 +209,5 @@ export default function Home() {
         </p>
       </footer>
     </main>
-  );
+  )
 }
